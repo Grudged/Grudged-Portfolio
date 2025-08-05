@@ -18,7 +18,7 @@ export class ProjectsComponent {
       title: 'Enterprise Warehouse Management System',
       description: 'Real-time logistics dashboard for slot machine manufacturing - tracking inventory from receiving through shipping with sub-second data updates across multiple warehouse stations.',
       technologies: ['AngularJS', 'JavaScript', 'Real-time APIs', 'Enterprise Database'],
-      image: 'assets/images/warehouse-system.jpg',
+      image: 'MaterialRequestExample.png',
       liveUrl: '#',
       githubUrl: '#',
       category: 'Enterprise'
@@ -27,7 +27,7 @@ export class ProjectsComponent {
       title: 'Freelance Time Tracker Platform',
       description: 'Professional time tracking application for freelancers with JWT authentication, project management, client reporting, and modern Angular standalone architecture.',
       technologies: ['Angular 20', 'Node.js', 'Express.js', 'MongoDB', 'JWT'],
-      image: 'assets/images/timetracker.jpg',
+      image: 'FreelanceTTDashboard.png',
       liveUrl: '#',
       githubUrl: 'https://github.com/grudged/FreelanceTimeTracker',
       category: 'Full Stack'
