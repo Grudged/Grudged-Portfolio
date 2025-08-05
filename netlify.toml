@@ -6,8 +6,8 @@
   publish = "Grudged-Portfolio/dist/Grudged-Portfolio/browser"
 
 [build.environment]
-  # Node.js version
-  NODE_VERSION = "18"
+  # Node.js version (Angular 20 requires Node.js 20.19+ or 22.12+)
+  NODE_VERSION = "20.19.0"
 
 # Redirect rules for Angular single page application
 [[redirects]]
