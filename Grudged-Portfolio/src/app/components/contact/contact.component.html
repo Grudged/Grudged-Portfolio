@@ -84,9 +84,20 @@
             class="form-control"></textarea>
         </div>
         
-        <button type="submit" class="btn btn-primary" [disabled]="!form.valid">
-          Send Message
+        <button type="submit" class="btn btn-primary" [disabled]="!form.valid || isSubmitting">
+          <span *ngIf="isSubmitting">Sending...</span>
+          <span *ngIf="!isSubmitting">Send Message</span>
         </button>
+        
+        <!-- Alternative contact button -->
+        <button type="button" class="btn btn-secondary" (click)="openEmailClient()">
+          Open Email Client
+        </button>
+        
+        <!-- Status message -->
+        <div *ngIf="submitMessage" class="submit-message" [class.success]="submitSuccess" [class.error]="!submitSuccess">
+          {{ submitMessage }}
+        </div>
       </form>
     </div>
   </div>
