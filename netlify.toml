@@ -1,9 +1,9 @@
 [build]
-  # Build command (run from the nested directory)
-  command = "cd Grudged-Portfolio && npm run build:prod"
+  # Build command
+  command = "npm run build"
   
   # Directory to publish (Angular build output from nested directory)
-  publish = "Grudged-Portfolio/dist/Grudged-Portfolio"
+  publish = "Grudged-Portfolio/dist/Grudged-Portfolio/browser"
 
 [build.environment]
   # Node.js version

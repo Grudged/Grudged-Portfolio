@@ -1,0 +1,9 @@
+{
+  "name": "grudged-portfolio-root",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cd Grudged-Portfolio && npm install && npm run build:prod",
+    "start": "cd Grudged-Portfolio && npm start"
+  },
+  "description": "Portfolio website build configuration"
+}
