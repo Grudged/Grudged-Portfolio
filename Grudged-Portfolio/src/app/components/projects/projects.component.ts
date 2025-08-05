@@ -36,8 +36,8 @@ export class ProjectsComponent {
       title: 'Pokemon Trading Card Marketplace',
       description: 'E-commerce platform with Stripe payment processing, eBay API price integration, and real-time inventory management. Features secure checkout and automated pricing updates.',
       technologies: ['Angular', 'FastAPI', 'Stripe', 'eBay API', 'Netlify'],
-      image: 'assets/images/pokemon-marketplace.jpg',
-      liveUrl: '#',
+      image: 'PokeProjectHomeMarket.png',
+      liveUrl: 'https://grudgedgamingsmarketplace.netlify.app',
       githubUrl: 'https://github.com/grudged/Poke-Project',
       category: 'E-commerce'
     },
@@ -45,8 +45,8 @@ export class ProjectsComponent {
       title: 'Sports Analytics Platform',
       description: 'Multi-sport data visualization platform with NHL/NFL statistics, PostgreSQL data modeling, and expanding fantasy football analytics. Built for scalable sports data processing.',
       technologies: ['Angular', 'Python', 'Flask', 'PostgreSQL', 'Data Visualization'],
-      image: 'assets/images/sports-analytics.jpg',
-      liveUrl: '#',
+      image: 'SportsDataNHL.png',
+      liveUrl: 'https://nhl-data-visualizer.netlify.app/',
       githubUrl: 'https://github.com/grudged/nhl-data-projects',
       category: 'Data Analytics'
     },
@@ -54,7 +54,7 @@ export class ProjectsComponent {
       title: 'DevOps Monitoring Infrastructure',
       description: 'Containerized application monitoring with Docker and Zabbix integration. Monitors multiple servers, web services, and FastAPI applications with automated alerting.',
       technologies: ['Docker', 'Zabbix', 'System Administration', 'Python Scripts'],
-      image: 'assets/images/devops-monitoring.jpg',
+      image: 'ZabbixDockerContainer.png',
       liveUrl: '#',
       githubUrl: 'https://github.com/grudged/FreelanceTimeTracker',
       category: 'DevOps'
@@ -63,8 +63,8 @@ export class ProjectsComponent {
       title: 'Mythical Author Portfolio Site',
       description: 'Content management system with SEO optimization, authentication functionality, and modern web performance. Deployed on Netlify with comprehensive SEO implementation.',
       technologies: ['Angular', 'SEO Optimization', 'Authentication', 'Netlify'],
-      image: 'assets/images/author-site.jpg',
-      liveUrl: '#',
+      image: 'AMOakleyHomePage.jpg',
+      liveUrl: 'https://amoakleysite.netlify.app/home',
       githubUrl: 'https://github.com/grudged/Olli-Project',
       category: 'Content Management'
     }
