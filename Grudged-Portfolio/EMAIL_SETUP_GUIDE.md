@@ -43,16 +43,20 @@ Sent from your portfolio contact form
 1. Go to "Account" → "General"
 2. Copy your **Public Key**
 
-### Step 5: Update Code
-Replace these values in `contact.component.ts`:
+### Step 5: Update Configuration
+Replace these values in `src/app/config/email.config.ts`:
 - `YOUR_PUBLIC_KEY` → Your actual public key
 - `YOUR_SERVICE_ID` → Your service ID
 - `YOUR_TEMPLATE_ID` → Your template ID
 
 ### Example:
 ```typescript
-emailjs.init('user_abcd1234efgh5678'); // Your public key
-emailjs.send('service_xyz789', 'template_abc123', { ... });
+export const emailConfig = {
+  publicKey: 'user_abcd1234efgh5678',     // Your actual public key
+  serviceId: 'service_xyz789',            // Your service ID
+  templateId: 'template_abc123',          // Your template ID
+  toEmail: 'Chrismoore044@gmail.com'
+};
 ```
 
 ## Option 2: Direct Mailto (Already Implemented)

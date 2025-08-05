@@ -3,13 +3,13 @@
 
 export const emailConfig = {
   // Get from EmailJS dashboard → Account → General
-  publicKey: 'YOUR_PUBLIC_KEY', // Replace with your actual public key
+  publicKey: 'vMrbTQxfgeNw5alsg', // Replace with your actual public key
   
   // Get from EmailJS dashboard → Email Services
-  serviceId: 'YOUR_SERVICE_ID', // Replace with your service ID
+  serviceId: 'service_vnkj4wp', // Replace with your service ID
   
   // Get from EmailJS dashboard → Email Templates
-  templateId: 'YOUR_TEMPLATE_ID', // Replace with your template ID
+  templateId: 'template_izo1l9b', // Replace with your template ID
   
   // Your email where messages will be sent
   toEmail: 'Chrismoore044@gmail.com'
