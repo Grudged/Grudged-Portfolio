@@ -20,7 +20,36 @@
   text-align: center;
   font-size: 1.1rem;
   color: #666;
+  margin-bottom: 2rem;
+}
+
+.category-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
   margin-bottom: 3rem;
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  border: 2px solid #007bff;
+  background: transparent;
+  color: #007bff;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.filter-btn:hover {
+  background: #007bff;
+  color: white;
+}
+
+.filter-btn.active {
+  background: #007bff;
+  color: white;
 }
 
 .projects-grid {
@@ -66,11 +95,28 @@
   padding: 1.5rem;
 }
 
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
 .project-title {
   font-size: 1.3rem;
   font-weight: bold;
-  margin-bottom: 0.5rem;
   color: #333;
+  flex: 1;
+}
+
+.project-category {
+  background: #28a745;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-left: 1rem;
 }
 
 .project-description {
@@ -98,6 +144,7 @@
 .project-links {
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
 
 .project-link {
@@ -113,6 +160,12 @@
 .project-link:hover {
   background: #007bff;
   color: white;
+}
+
+.project-note {
+  font-size: 0.85rem;
+  color: #888;
+  font-style: italic;
 }
 
 @media (max-width: 768px) {

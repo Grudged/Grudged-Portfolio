@@ -9,30 +9,75 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent {
+  selectedCategory = 'All';
+  
+  categories = ['All', 'Enterprise', 'Full Stack', 'E-commerce', 'Data Analytics', 'DevOps', 'Content Management'];
+  
   projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution with Angular, Node.js, and MongoDB',
-      technologies: ['Angular', 'Node.js', 'MongoDB', 'Stripe'],
-      image: 'assets/images/project1.jpg',
+      title: 'Enterprise Warehouse Management System',
+      description: 'Real-time logistics dashboard for slot machine manufacturing - tracking inventory from receiving through shipping with sub-second data updates across multiple warehouse stations.',
+      technologies: ['AngularJS', 'JavaScript', 'Real-time APIs', 'Enterprise Database'],
+      image: 'assets/images/warehouse-system.jpg',
       liveUrl: '#',
-      githubUrl: '#'
+      githubUrl: '#',
+      category: 'Enterprise'
     },
     {
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates',
-      technologies: ['React', 'Express', 'Socket.io', 'PostgreSQL'],
-      image: 'assets/images/project2.jpg',
+      title: 'Freelance Time Tracker Platform',
+      description: 'Professional time tracking application for freelancers with JWT authentication, project management, client reporting, and modern Angular standalone architecture.',
+      technologies: ['Angular 20', 'Node.js', 'Express.js', 'MongoDB', 'JWT'],
+      image: 'assets/images/timetracker.jpg',
       liveUrl: '#',
-      githubUrl: '#'
+      githubUrl: 'https://github.com/grudged/FreelanceTimeTracker',
+      category: 'Full Stack'
     },
     {
-      title: 'Weather Dashboard',
-      description: 'A responsive weather dashboard with location-based forecasts',
-      technologies: ['Vue.js', 'Weather API', 'Chart.js', 'CSS Grid'],
-      image: 'assets/images/project3.jpg',
+      title: 'Pokemon Trading Card Marketplace',
+      description: 'E-commerce platform with Stripe payment processing, eBay API price integration, and real-time inventory management. Features secure checkout and automated pricing updates.',
+      technologies: ['Angular', 'FastAPI', 'Stripe', 'eBay API', 'Netlify'],
+      image: 'assets/images/pokemon-marketplace.jpg',
       liveUrl: '#',
-      githubUrl: '#'
+      githubUrl: 'https://github.com/grudged/Poke-Project',
+      category: 'E-commerce'
+    },
+    {
+      title: 'Sports Analytics Platform',
+      description: 'Multi-sport data visualization platform with NHL/NFL statistics, PostgreSQL data modeling, and expanding fantasy football analytics. Built for scalable sports data processing.',
+      technologies: ['Angular', 'Python', 'Flask', 'PostgreSQL', 'Data Visualization'],
+      image: 'assets/images/sports-analytics.jpg',
+      liveUrl: '#',
+      githubUrl: 'https://github.com/grudged/nhl-data-projects',
+      category: 'Data Analytics'
+    },
+    {
+      title: 'DevOps Monitoring Infrastructure',
+      description: 'Containerized application monitoring with Docker and Zabbix integration. Monitors multiple servers, web services, and FastAPI applications with automated alerting.',
+      technologies: ['Docker', 'Zabbix', 'System Administration', 'Python Scripts'],
+      image: 'assets/images/devops-monitoring.jpg',
+      liveUrl: '#',
+      githubUrl: 'https://github.com/grudged/FreelanceTimeTracker',
+      category: 'DevOps'
+    },
+    {
+      title: 'Mythical Author Portfolio Site',
+      description: 'Content management system with SEO optimization, authentication functionality, and modern web performance. Deployed on Netlify with comprehensive SEO implementation.',
+      technologies: ['Angular', 'SEO Optimization', 'Authentication', 'Netlify'],
+      image: 'assets/images/author-site.jpg',
+      liveUrl: '#',
+      githubUrl: 'https://github.com/grudged/Olli-Project',
+      category: 'Content Management'
     }
   ];
+
+  get filteredProjects() {
+    if (this.selectedCategory === 'All') {
+      return this.projects;
+    }
+    return this.projects.filter(project => project.category === this.selectedCategory);
+  }
+
+  selectCategory(category: string) {
+    this.selectedCategory = category;
+  }
 }

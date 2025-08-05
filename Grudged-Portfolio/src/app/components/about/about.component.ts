@@ -10,13 +10,13 @@ import { CommonModule } from '@angular/common';
 })
 export class AboutComponent {
   skills = [
-    { name: 'Angular', level: 90 },
-    { name: 'TypeScript', level: 85 },
-    { name: 'JavaScript', level: 90 },
-    { name: 'Node.js', level: 80 },
-    { name: 'HTML/CSS', level: 95 },
-    { name: 'MongoDB', level: 75 },
-    { name: 'PostgreSQL', level: 70 },
-    { name: 'Git', level: 85 }
+    { name: 'Angular/AngularJS', level: 95 },
+    { name: 'JavaScript/TypeScript', level: 90 },
+    { name: 'Node.js/Express.js', level: 85 },
+    { name: 'Python/FastAPI', level: 80 },
+    { name: 'MongoDB/PostgreSQL', level: 85 },
+    { name: 'Real-time Systems', level: 90 },
+    { name: 'Docker/DevOps', level: 75 },
+    { name: 'API Integration', level: 90 }
   ];
 }
