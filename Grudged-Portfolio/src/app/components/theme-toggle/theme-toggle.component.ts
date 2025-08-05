@@ -52,9 +52,11 @@ import { ThemeService } from '../../services/theme.service';
   `]
 })
 export class ThemeToggleComponent {
-  isDarkTheme$ = this.themeService.isDarkTheme$;
+  isDarkTheme$;
 
-  constructor(private themeService: ThemeService) {}
+  constructor(private themeService: ThemeService) {
+    this.isDarkTheme$ = this.themeService.isDarkTheme$;
+  }
 
   toggleTheme(): void {
     this.themeService.toggleTheme();
