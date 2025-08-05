@@ -1,6 +1,6 @@
 .about {
   padding: 5rem 2rem;
-  background: white;
+  background: var(--bg-secondary);
 }
 
 .container {
@@ -19,13 +19,13 @@
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 2rem;
-  color: #333;
+  color: var(--text-color);
 }
 
 .about-description {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #666;
+  color: var(--text-secondary);
   margin-bottom: 1.5rem;
 }
 
@@ -39,33 +39,34 @@
 .stat {
   text-align: center;
   padding: 1.5rem;
-  background: #f8f9fa;
+  background: var(--card-bg);
   border-radius: 10px;
 }
 
 .stat h3 {
   font-size: 2rem;
   font-weight: bold;
-  color: #007bff;
+  color: var(--primary-color);
   margin-bottom: 0.5rem;
 }
 
 .stat p {
-  color: #666;
+  color: var(--text-secondary);
   font-weight: 500;
 }
 
 .skills-section {
-  background: #f8f9fa;
+  background: var(--card-bg);
   padding: 2rem;
   border-radius: 15px;
+  box-shadow: var(--shadow);
 }
 
 .skills-title {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 2rem;
-  color: #333;
+  color: var(--text-color);
   text-align: center;
 }
 
@@ -89,25 +90,25 @@
 
 .skill-name {
   font-weight: 500;
-  color: #333;
+  color: var(--text-color);
 }
 
 .skill-percentage {
   font-size: 0.9rem;
-  color: #007bff;
+  color: var(--primary-color);
   font-weight: 500;
 }
 
 .skill-bar {
   height: 8px;
-  background: #e9ecef;
+  background: var(--border-color);
   border-radius: 4px;
   overflow: hidden;
 }
 
 .skill-progress {
   height: 100%;
-  background: linear-gradient(90deg, #007bff, #0056b3);
+  background: linear-gradient(90deg, var(--primary-color), var(--primary-hover));
   border-radius: 4px;
   transition: width 1s ease-in-out;
 }
