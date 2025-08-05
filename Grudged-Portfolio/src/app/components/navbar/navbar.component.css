@@ -2,11 +2,12 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--navbar-bg);
   backdrop-filter: blur(10px);
   z-index: 1000;
   padding: 1rem 0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow);
+  transition: background-color 0.3s ease;
 }
 
 .nav-container {
@@ -22,23 +23,24 @@
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
-  color: #333;
+  color: var(--text-color);
 }
 
 .nav-menu {
   display: flex;
   gap: 2rem;
+  align-items: center;
 }
 
 .nav-link {
   text-decoration: none;
-  color: #333;
+  color: var(--text-color);
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #007bff;
+  color: var(--primary-color);
 }
 
 .nav-toggle {
@@ -50,7 +52,7 @@
 .nav-toggle span {
   width: 25px;
   height: 3px;
-  background: #333;
+  background: var(--text-color);
   margin: 3px 0;
   transition: 0.3s;
 }
@@ -65,11 +67,11 @@
     left: -100%;
     top: 70px;
     flex-direction: column;
-    background: white;
+    background: var(--navbar-bg);
     width: 100%;
     text-align: center;
     transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--shadow);
     padding: 2rem 0;
   }
   

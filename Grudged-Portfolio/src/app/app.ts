@@ -1,6 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ThemeService } from './services/theme.service';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +11,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 })
 export class App {
   protected readonly title = signal('Grudged-Portfolio');
+
+  constructor(private themeService: ThemeService) {
+    // Initialize theme service on app startup
+  }
 }
