@@ -64,7 +64,7 @@ export class ProjectsComponent {
       description: 'Content management system with SEO optimization, authentication functionality, and modern web performance. Deployed on Netlify with comprehensive SEO implementation.',
       technologies: ['Angular', 'SEO Optimization', 'Authentication', 'Netlify'],
       image: 'AMOakleyHomePage.jpg',
-      liveUrl: 'https://amoakleysite.netlify.app/home',
+      liveUrl: 'https://amoakley.com/home',
       githubUrl: 'https://github.com/grudged/Olli-Project',
       category: 'Content Management'
     }
