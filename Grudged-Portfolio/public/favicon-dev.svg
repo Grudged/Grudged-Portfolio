@@ -8,25 +8,25 @@
   </defs>
   
   <!-- Background -->
-  <rect width="32" height="32" rx="6" fill="url(#devGradient)" stroke="#334155" stroke-width="1"/>
+  <rect width="32" height="32" rx="6" fill="url(#devGradient)"/>
   
-  <!-- Code brackets -->
-  <text x="6" y="20" 
+  <!-- Much larger code brackets and G -->
+  <text x="2" y="24" 
         font-family="Monaco, 'Courier New', monospace" 
-        font-size="14" 
+        font-size="18" 
         font-weight="bold" 
         fill="#64748b">&lt;</text>
         
-  <text x="16" y="20" 
+  <text x="16" y="24" 
         font-family="Monaco, 'Courier New', monospace" 
-        font-size="12" 
+        font-size="16" 
         font-weight="bold" 
         text-anchor="middle" 
         fill="#10b981">G</text>
         
-  <text x="26" y="20" 
+  <text x="30" y="24" 
         font-family="Monaco, 'Courier New', monospace" 
-        font-size="14" 
+        font-size="18" 
         font-weight="bold" 
         text-anchor="end" 
         fill="#64748b">/&gt;</text>

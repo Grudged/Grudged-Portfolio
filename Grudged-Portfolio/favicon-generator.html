@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Favicon Converter</title>
+</head>
+<body>
+    <canvas id="canvas" width="32" height="32"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Draw the favicon
+        ctx.fillStyle = '#0f172a';
+        ctx.fillRect(0, 0, 32, 32);
+        
+        // Border
+        ctx.strokeStyle = '#334155';
+        ctx.lineWidth = 1;
+        ctx.strokeRect(0, 0, 32, 32);
+        
+        // Text
+        ctx.font = 'bold 14px Monaco, monospace';
+        ctx.fillStyle = '#64748b';
+        ctx.fillText('<', 6, 20);
+        ctx.fillText('/>', 20, 20);
+        
+        ctx.font = 'bold 12px Monaco, monospace';
+        ctx.fillStyle = '#10b981';
+        ctx.textAlign = 'center';
+        ctx.fillText('G', 16, 20);
+        
+        // Convert to blob and download
+        canvas.toBlob(function(blob) {
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'favicon.png';
+            a.click();
+        });
+    </script>
+</body>
+</html>
