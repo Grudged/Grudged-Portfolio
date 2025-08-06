@@ -10,4 +10,11 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./hero.component.css']
 })
 export class HeroComponent {
+  
+  downloadResume(): void {
+    const link = document.createElement('a');
+    link.href = 'assets/resume.pdf';
+    link.download = 'Chris_Moore_Resume.pdf';
+    link.click();
+  }
 }
