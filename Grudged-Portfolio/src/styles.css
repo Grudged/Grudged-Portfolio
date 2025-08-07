@@ -48,6 +48,7 @@ body {
   background-color: var(--bg-color);
   scroll-behavior: smooth;
   transition: background-color 0.3s ease, color 0.3s ease;
+  font-display: swap;
 }
 
 html, body {
@@ -67,6 +68,7 @@ a {
 img {
   max-width: 100%;
   height: auto;
+  loading: lazy;
 }
 
 button {

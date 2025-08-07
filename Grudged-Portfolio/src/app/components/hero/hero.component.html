@@ -2,7 +2,7 @@
   <div class="hero-container">
     <div class="hero-content">
       <h1 class="hero-title">Hi, I'm <span class="highlight">Chris Moore</span></h1>
-      <h2 class="hero-subtitle">Senior Full Stack Developer</h2>
+      <p class="hero-subtitle" role="text">Senior Full Stack Developer</p>
       <p class="hero-description">
         Enterprise developer with 5+ years building mission-critical real-time systems. 
         Specialized in Angular, Node.js, and scalable warehouse management platforms 
@@ -11,13 +11,12 @@
       <div class="hero-buttons">
         <a routerLink="/projects" class="btn btn-primary">View My Work</a>
         <a routerLink="/contact" class="btn btn-secondary">Get In Touch</a>
-        <button (click)="downloadResume()" class="btn btn-outline">Download Resume</button>
       </div>
     </div>
     <div class="hero-image">
       <div class="placeholder-image">
         <!-- Add your profile image here -->
-        <img src="my-head-shot.jpg" alt="Profile">
+        <img src="my-head-shot.jpg" alt="Chris Moore - Full Stack Developer Profile Photo" loading="lazy" width="300" height="300">
         <div class="placeholder" *ngIf="false">Your Photo</div>
       </div>
     </div>

@@ -5,18 +5,18 @@
       <div class="brand-logo" title="GG Logo"></div>
     </div>
     
-    <div class="nav-toggle" (click)="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+    <button class="nav-toggle" (click)="toggleMenu()" type="button" aria-label="Toggle navigation menu" aria-expanded="false" [attr.aria-expanded]="isMenuOpen">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </button>
     
-    <div class="nav-menu" [class.active]="isMenuOpen">
-      <a routerLink="/" class="nav-link" (click)="toggleMenu()">Home</a>
+    <nav class="nav-menu" [class.active]="isMenuOpen" role="navigation" aria-label="Main navigation">
+      <a routerLink="/" class="nav-link" (click)="toggleMenu()" aria-current="page">Home</a>
       <a routerLink="/about" class="nav-link" (click)="toggleMenu()">About</a>
       <a routerLink="/projects" class="nav-link" (click)="toggleMenu()">Projects</a>
       <a routerLink="/contact" class="nav-link" (click)="toggleMenu()">Contact</a>
       <app-theme-toggle></app-theme-toggle>
-    </div>
+    </nav>
   </div>
 </nav>

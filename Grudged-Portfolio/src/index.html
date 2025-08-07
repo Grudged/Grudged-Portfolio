@@ -8,12 +8,61 @@
   <meta name="author" content="Grudged">
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://grudged-portfolio.netlify.app/">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://grudged-portfolio.netlify.app/">
+  <meta property="og:title" content="Grudged Portfolio - Full Stack Developer">
+  <meta property="og:description" content="Full Stack Developer specializing in Angular, Node.js, and modern web technologies. View my portfolio of enterprise applications, e-commerce platforms, and data analytics projects.">
+  <meta property="og:image" content="https://grudged-portfolio.netlify.app/my-head-shot.jpg">
+  <meta property="og:site_name" content="Grudged Portfolio">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://grudged-portfolio.netlify.app/">
+  <meta property="twitter:title" content="Grudged Portfolio - Full Stack Developer">
+  <meta property="twitter:description" content="Full Stack Developer specializing in Angular, Node.js, and modern web technologies. View my portfolio of enterprise applications, e-commerce platforms, and data analytics projects.">
+  <meta property="twitter:image" content="https://grudged-portfolio.netlify.app/my-head-shot.jpg">
+  
+  <!-- Performance -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
   <!-- Favicon with cache busting -->
   <link rel="icon" type="image/svg+xml" href="GGLogo.png?v=6">
   <link rel="icon" type="image/x-icon" href="GGLogo.png?v=6">
   <!-- Additional sizes for better compatibility -->
   <link rel="apple-touch-icon" sizes="180x180" href="GGLogo.png">
   <meta name="theme-color" content="#0f172a">
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Grudged",
+    "jobTitle": "Full Stack Developer",
+    "url": "https://grudged-portfolio.netlify.app/",
+    "image": "https://grudged-portfolio.netlify.app/my-head-shot.jpg",
+    "sameAs": [],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Freelance"
+    },
+    "knowsAbout": ["Angular", "Node.js", "TypeScript", "JavaScript", "Web Development", "Full Stack Development"],
+    "description": "Full Stack Developer specializing in Angular, Node.js, and modern web technologies"
+  }
+  </script>
 </head>
 <body>
   <app-root></app-root>

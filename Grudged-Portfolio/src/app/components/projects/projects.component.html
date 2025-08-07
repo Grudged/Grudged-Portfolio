@@ -17,7 +17,7 @@
     <div class="projects-grid">
       <div class="project-card" *ngFor="let project of filteredProjects">
         <div class="project-image">
-          <img [src]="project.image" [alt]="project.title">
+          <img [src]="project.image" [alt]="project.title + ' - Project Screenshot'" loading="lazy" width="400" height="250">
           <div class="placeholder-project" *ngIf="false">Project Image</div>
         </div>
         
