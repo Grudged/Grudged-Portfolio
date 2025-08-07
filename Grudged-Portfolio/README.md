@@ -1,59 +1,129 @@
-# GrudgedPortfolio
+# Grudged Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.1.
+A modern, fully SEO-optimized portfolio website showcasing full-stack development expertise. Built with Angular 20 and optimized for performance, accessibility, and search engine discoverability.
 
-## Development server
+## 🚀 Features
 
-To start a local development server, run:
+- **Modern Angular Architecture**: Built with Angular 20+ standalone components
+- **SEO Optimized**: Complete meta tags, Open Graph, Twitter Cards, structured data
+- **Performance Focused**: Lazy loading, optimized images, Core Web Vitals ready
+- **Fully Responsive**: Mobile-first design with smooth animations
+- **Accessibility**: ARIA labels, semantic HTML, keyboard navigation
+- **Dark/Light Theme**: Toggle between themes with smooth transitions
+- **Contact Integration**: EmailJS integration for contact form functionality
 
-```bash
-ng serve
-```
+## 🛠 Tech Stack
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- **Frontend**: Angular 20, TypeScript, CSS3
+- **Styling**: Custom CSS with CSS variables for theming
+- **Email Service**: EmailJS for contact form
+- **Deployment**: Optimized for Netlify with proper headers and redirects
+- **SEO**: Structured data, sitemap, robots.txt, analytics ready
 
-## Code scaffolding
+## 📦 Getting Started
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Prerequisites
+- Node.js (v18+ recommended)
+- Angular CLI
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+### Installation
 
 ```bash
-ng build
+# Clone the repository
+git clone <repository-url>
+cd Grudged-Portfolio
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run start
+# or for specific port
+npm run serve:43503
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### Development Commands
 
 ```bash
-ng test
+# Development server
+ng serve                    # Default port 4200
+npm run serve:43503        # Custom port 43503
+
+# Build for production
+npm run build:prod         # Optimized production build
+
+# Run tests
+ng test                    # Unit tests with Karma
+
+# Development build with watch
+npm run watch             # Build and watch for changes
 ```
 
-## Running end-to-end tests
+## 🎨 Customization
 
-For end-to-end (e2e) testing, run:
+### Personal Information
+Update personal details in:
+- `src/app/components/hero/hero.component.html` - Name and title
+- `src/app/components/about/about.component.html` - Bio and skills
+- `src/app/components/projects/projects.component.ts` - Project data
 
-```bash
-ng e2e
-```
+### SEO Configuration
+Update SEO settings in `src/index.html`:
+- Replace `https://grudged-portfolio.netlify.app/` with your domain
+- Update social media URLs in structured data
+- Replace `GA_MEASUREMENT_ID` with your Google Analytics ID
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+### Styling
+- Global styles: `src/styles.css`
+- Component styles: Individual `.css` files per component
+- Theme variables: Defined in `:root` and `.dark-theme` selectors
 
-## Additional Resources
+## 📊 SEO Features
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- ✅ Complete meta tags (title, description, keywords)
+- ✅ Open Graph tags for social media sharing
+- ✅ Twitter Card optimization
+- ✅ JSON-LD structured data (Person schema)
+- ✅ Sitemap.xml and robots.txt
+- ✅ Canonical URLs
+- ✅ Performance optimization (lazy loading, preconnect)
+- ✅ Google Analytics integration ready
+
+## 🚢 Deployment
+
+### Netlify (Recommended)
+1. Build the project: `npm run build:prod`
+2. Deploy the `dist/Grudged-Portfolio/browser` folder
+3. Netlify configuration files included:
+   - `public/_redirects` - SPA routing
+   - `public/_headers` - Performance and security headers
+
+### Other Platforms
+The production build is compatible with any static hosting service.
+
+## 📱 Browser Support
+
+- Chrome (latest)
+- Firefox (latest)  
+- Safari (latest)
+- Edge (latest)
+
+## 🔧 Configuration Files
+
+- `angular.json` - Angular CLI configuration
+- `tsconfig.json` - TypeScript configuration
+- `package.json` - Dependencies and scripts
+- `public/_headers` - Netlify headers for performance
+- `public/_redirects` - SPA routing for Netlify
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+---
+
+Built with ❤️ using Angular and modern web technologies.
