@@ -11,62 +11,58 @@ import { CommonModule } from '@angular/common';
 export class ProjectsComponent {
   selectedCategory = 'All';
   
-  categories = ['All', 'Enterprise', 'Full Stack', 'E-commerce', 'Data Analytics', 'DevOps', 'Content Management'];
+  categories = ['All', 'Enterprise', 'Full Stack', 'E-commerce', 'Data Analytics', 'DevOps'];
   
   projects = [
     {
       title: 'Enterprise Warehouse Management System',
-      description: 'Real-time logistics dashboard for slot machine manufacturing - tracking inventory from receiving through shipping with sub-second data updates across multiple warehouse stations.',
-      technologies: ['AngularJS', 'JavaScript', 'Real-time APIs', 'Enterprise Database'],
+      description: 'Real-time inventory tracking dashboard that processes live data from receiving through shipping operations, enabling manufacturing teams to make instant decisions with up-to-date information.',
+      technologies: ['Angular', 'JavaScript', 'Real-time APIs', 'SQL Database'],
       image: 'MaterialRequestExample.png',
       liveUrl: '#',
       githubUrl: '#',
-      category: 'Enterprise'
-    },
-    {
-      title: 'Freelance Time Tracker Platform',
-      description: 'Professional time tracking application for freelancers with JWT authentication, project management, client reporting, and modern Angular standalone architecture.',
-      technologies: ['Angular 20', 'Node.js', 'Express.js', 'MongoDB', 'JWT'],
-      image: 'FreelanceTTDashboard.png',
-      liveUrl: '#',
-      githubUrl: 'https://github.com/grudged/FreelanceTimeTracker',
-      category: 'Full Stack'
+      category: 'Enterprise',
+      links: ['Live Demo', 'Case Study']
     },
     {
       title: 'Pokemon Trading Card Marketplace',
-      description: 'E-commerce platform with Stripe payment processing, eBay API price integration, and real-time inventory management. Features secure checkout and automated pricing updates.',
-      technologies: ['Angular', 'FastAPI', 'Stripe', 'eBay API', 'Netlify'],
+      description: 'Full-featured e-commerce platform where collectors can buy and sell trading cards with secure payment processing and real-time price checking from eBay.',
+      technologies: ['Angular', 'FastAPI', 'MongoDB', 'Stripe API', 'Netlify'],
       image: 'PokeProjectHomeMarket.png',
       liveUrl: 'https://grudgedgamingsmarketplace.netlify.app',
       githubUrl: 'https://github.com/grudged/Poke-Project',
-      category: 'E-commerce'
+      category: 'E-commerce',
+      links: ['Live Demo', 'View Code']
     },
     {
-      title: 'Sports Analytics Platform',
-      description: 'Multi-sport data visualization platform with NHL/NFL statistics, PostgreSQL data modeling, and expanding fantasy football analytics. Built for scalable sports data processing.',
-      technologies: ['Angular', 'Python', 'Flask', 'PostgreSQL', 'Data Visualization'],
+      title: 'Freelance Time Tracker',
+      description: 'Professional time management platform that helps freelancers track billable hours, manage multiple projects, and generate client reports automatically.',
+      technologies: ['Angular', 'Node.js', 'Express', 'MongoDB', 'JWT Auth'],
+      image: 'FreelanceTTDashboard.png',
+      liveUrl: '#',
+      githubUrl: 'https://github.com/grudged/FreelanceTimeTracker',
+      category: 'Full Stack',
+      links: ['Live Demo', 'View Code']
+    },
+    {
+      title: 'Sports Analytics Dashboard',
+      description: 'Interactive data visualization platform displaying NHL and NFL player statistics with advanced filtering, helping fantasy sports enthusiasts make informed decisions.',
+      technologies: ['Angular', 'Python', 'Flask', 'PostgreSQL'],
       image: 'SportsDataNHL.png',
       liveUrl: 'https://nhl-data-visualizer.netlify.app/',
       githubUrl: 'https://github.com/grudged/nhl-data-projects',
-      category: 'Data Analytics'
+      category: 'Data Analytics',
+      links: ['Live Demo', 'View Code']
     },
     {
-      title: 'DevOps Monitoring Infrastructure',
-      description: 'Containerized application monitoring with Docker and Zabbix integration. Monitors multiple servers, web services, and FastAPI applications with automated alerting.',
-      technologies: ['Docker', 'Zabbix', 'System Administration', 'Python Scripts'],
+      title: 'DevOps Monitoring Setup',
+      description: 'Containerized monitoring solution providing comprehensive visibility across multiple servers, web services, and applications in distributed environments.',
+      technologies: ['Docker', 'Zabbix', 'Python', 'System Administration'],
       image: 'ZabbixDockerContainer.png',
       liveUrl: '#',
-      githubUrl: 'https://github.com/grudged/FreelanceTimeTracker',
-      category: 'DevOps'
-    },
-    {
-      title: 'Mythical Author Portfolio Site',
-      description: 'Content management system with SEO optimization, authentication functionality, and modern web performance. Deployed on Netlify with comprehensive SEO implementation.',
-      technologies: ['Angular', 'SEO Optimization', 'Authentication', 'Netlify'],
-      image: 'AMOakleyHomePage.jpg',
-      liveUrl: 'https://amoakley.com/home',
-      githubUrl: 'https://github.com/grudged/Olli-Project',
-      category: 'Content Management'
+      githubUrl: '#',
+      category: 'DevOps',
+      links: ['Documentation', 'Architecture Diagram']
     }
   ];
 
