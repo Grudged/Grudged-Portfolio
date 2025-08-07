@@ -57,6 +57,17 @@
   transition: 0.3s;
 }
 
+.brand-logo {
+  height: 50px;
+  width: 50px;
+  background-image: url('/GGLogo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
 @media (max-width: 768px) {
   .nav-toggle {
     display: flex;
