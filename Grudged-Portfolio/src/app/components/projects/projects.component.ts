@@ -59,7 +59,14 @@ export class ProjectsComponent {
       githubUrl: 'https://github.com/grudged/FreelanceTimeTracker',
       category: 'Full Stack',
       links: ['Live Demo', 'View Code'],
-      diagrams: []
+      diagrams: [
+        'Component Hierachy (Frontend).png',
+        'Database Schema (Simplified ERD).png',
+        'Deployment and Monitoring.png',
+        'Data Flow.png',
+        'User Flow.png',
+        'System ArchitectureTT.png'
+      ]
     },
     {
       title: 'Sports Analytics Dashboard',
