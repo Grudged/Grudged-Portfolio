@@ -68,7 +68,7 @@ export class ProjectsComponent {
       title: 'Fantasy Author Content Site',
       description: 'A platform for fantasy author A.M. Oakley to showcase their work, connect with readers, and manage their writing projects.',
       technologies: ['Angular', 'CSS', 'HTML', 'Content Management'],
-      image: 'FantasyAuthorContentSite.png',
+      image: 'AMOakleyHome.jpg',
       liveUrl: 'https://amoakley.com',
       githubUrl: '#',
       category: 'Content Management',
