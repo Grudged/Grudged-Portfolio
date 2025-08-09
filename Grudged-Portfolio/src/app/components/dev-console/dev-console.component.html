@@ -1,59 +1,61 @@
-<div class="dev-console-overlay" @if (isVisible) (click)="closeConsole()">
-  <div class="dev-console" (click)="$event.stopPropagation()">
-    <div class="console-header">
-      <div class="console-title">
-        <span class="terminal-icon">⚡</span>
-        <span>Developer Console</span>
-        <span class="version">v2.1.0</span>
-      </div>
-      <div class="console-controls">
-        <button class="control-btn minimize">−</button>
-        <button class="control-btn maximize">□</button>
-        <button class="control-btn close" (click)="closeConsole()">×</button>
-      </div>
-    </div>
-    
-    <div class="console-body">
-      <div class="terminal-output" #terminalOutput>
-        @for (line of terminalLines; track trackByFn($index, line)) {
-          <div class="terminal-line" [class]="'line-' + line.type">
-            <span class="timestamp">{{ formatTimestamp(line.timestamp) }}</span>
-            <span class="line-content" [innerHTML]="formatLineContent(line.content)"></span>
-          </div>
-        }
+@if (isVisible) {
+  <div class="dev-console-overlay" (click)="closeConsole()">
+    <div class="dev-console" (click)="$event.stopPropagation()">
+      <div class="console-header">
+        <div class="console-title">
+          <span class="terminal-icon">⚡</span>
+          <span>Developer Console</span>
+          <span class="version">v2.1.0</span>
+        </div>
+        <div class="console-controls">
+          <button class="control-btn minimize">−</button>
+          <button class="control-btn maximize">□</button>
+          <button class="control-btn close" (click)="closeConsole()">×</button>
+        </div>
       </div>
       
-      <div class="terminal-input-container">
-        <span class="prompt">chris@portfolio:~$</span>
-        <input 
-          #commandInput
-          type="text" 
-          class="terminal-input"
-          [(ngModel)]="currentInput"
-          (keydown)="handleKeyDown($event)"
-          (keydown.enter)="executeCommand()"
-          placeholder="Type 'help' for commands..."
-          autocomplete="off"
-          spellcheck="false">
-        <span class="cursor">█</span>
+      <div class="console-body">
+        <div class="terminal-output" #terminalOutput>
+          @for (line of terminalLines; track trackByFn($index, line)) {
+            <div class="terminal-line" [class]="'line-' + line.type">
+              <span class="timestamp">{{ formatTimestamp(line.timestamp) }}</span>
+              <span class="line-content" [innerHTML]="formatLineContent(line.content)"></span>
+            </div>
+          }
+        </div>
+        
+        <div class="terminal-input-container">
+          <span class="prompt">chris@portfolio:~$</span>
+          <input 
+            #commandInput
+            type="text" 
+            class="terminal-input"
+            [(ngModel)]="currentInput"
+            (keydown)="handleKeyDown($event)"
+            (keydown.enter)="executeCommand()"
+            placeholder="Type 'help' for commands..."
+            autocomplete="off"
+            spellcheck="false">
+          <span class="cursor">█</span>
+        </div>
       </div>
-    </div>
-    
-    <div class="console-footer">
-      <div class="status-bar">
-        <span class="status-item">
-          <span class="status-dot online"></span>
-          Online
-        </span>
-        <span class="status-item">
-          Commands: {{ getCommandCount() }}
-        </span>
-        <span class="status-item">
-          History: {{ commandHistory.length }}
-        </span>
-        <span class="status-item">
-          ESC to close
-        </span>
+      
+      <div class="console-footer">
+        <div class="status-bar">
+          <span class="status-item">
+            <span class="status-dot online"></span>
+            Online
+          </span>
+          <span class="status-item">
+            Commands: {{ getCommandCount() }}
+          </span>
+          <span class="status-item">
+            History: {{ commandHistory.length }}
+          </span>
+          <span class="status-item">
+            ESC to close
+          </span>
+        </div>
       </div>
     </div>
   </div>
