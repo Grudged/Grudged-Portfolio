@@ -162,6 +162,11 @@
   color: white;
 }
 
+.documentation-btn {
+  background: transparent;
+  cursor: pointer;
+}
+
 .project-note {
   font-size: 0.85rem;
   color: var(--text-muted);

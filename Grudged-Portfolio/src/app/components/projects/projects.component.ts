@@ -1,15 +1,20 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { DocumentationDialogComponent } from '../documentation-dialog/documentation-dialog.component';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, DocumentationDialogComponent],
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent {
   selectedCategory = 'All';
+  
+  isDocumentationOpen = false;
+  selectedProjectTitle = '';
+  selectedProjectDiagrams: string[] = [];
   
   categories = ['All', 'Enterprise', 'Full Stack', 'E-commerce', 'Data Analytics', 'DevOps'];
   
@@ -22,7 +27,9 @@ export class ProjectsComponent {
       liveUrl: '#',
       githubUrl: '#',
       category: 'Enterprise',
-      links: ['Live Demo', 'Case Study']
+      links: ['Live Demo', 'Case Study'],
+      diagrams: [],
+      confidentialType: 'enterprise'
     },
     {
       title: 'Pokemon Trading Card Marketplace',
@@ -30,9 +37,18 @@ export class ProjectsComponent {
       technologies: ['Angular', 'FastAPI', 'MongoDB', 'Stripe API', 'Netlify'],
       image: 'PokeProjectHomeMarket.png',
       liveUrl: 'https://grudgedgamingsmarketplace.netlify.app',
-      githubUrl: 'https://github.com/grudged/Poke-Project',
+      githubUrl: '#',
       category: 'E-commerce',
-      links: ['Live Demo', 'View Code']
+      links: ['Live Demo', 'View Code', 'Architecture Diagram'],
+      diagrams: [
+        'System Architecture Diagram.png',
+        'Data Scheme (ERD).png',
+        'User Flow Diagram.png',
+        'Data Flow Diagram.png',
+        'Component Hierarchy Diagram.png',
+        'State Management Diagram.png',
+        'Tech Stack Diagram.png'
+      ]
     },
     {
       title: 'Freelance Time Tracker',
@@ -42,7 +58,8 @@ export class ProjectsComponent {
       liveUrl: '#',
       githubUrl: 'https://github.com/grudged/FreelanceTimeTracker',
       category: 'Full Stack',
-      links: ['Live Demo', 'View Code']
+      links: ['Live Demo', 'View Code'],
+      diagrams: []
     },
     {
       title: 'Sports Analytics Dashboard',
@@ -52,7 +69,8 @@ export class ProjectsComponent {
       liveUrl: 'https://nhl-data-visualizer.netlify.app/',
       githubUrl: 'https://github.com/grudged/nhl-data-projects',
       category: 'Data Analytics',
-      links: ['Live Demo', 'View Code']
+      links: ['Live Demo', 'View Code'],
+      diagrams: []
     },
     {
       title: 'DevOps Monitoring Setup',
@@ -62,7 +80,9 @@ export class ProjectsComponent {
       liveUrl: '#',
       githubUrl: '#',
       category: 'DevOps',
-      links: ['Documentation', 'Architecture Diagram']
+      links: ['Documentation', 'Architecture Diagram'],
+      diagrams: [],
+      confidentialType: 'personal'
     },
     {
       title: 'Fantasy Author Content Site',
@@ -72,7 +92,9 @@ export class ProjectsComponent {
       liveUrl: 'https://amoakley.com',
       githubUrl: '#',
       category: 'Content Management',
-      links: ['Documentation', 'Architecture Diagram']
+      links: ['Documentation', 'Architecture Diagram'],
+      diagrams: [],
+      confidentialType: 'personal'
     }
   ];
 
@@ -85,5 +107,26 @@ export class ProjectsComponent {
 
   selectCategory(category: string) {
     this.selectedCategory = category;
+  }
+
+  openDocumentation(project: any) {
+    this.selectedProjectTitle = project.title;
+    this.selectedProjectDiagrams = project.diagrams || [];
+    this.isDocumentationOpen = true;
+  }
+
+  closeDocumentation() {
+    this.isDocumentationOpen = false;
+    this.selectedProjectTitle = '';
+    this.selectedProjectDiagrams = [];
+  }
+
+  getConfidentialMessage(project: any): string {
+    if (project.confidentialType === 'enterprise') {
+      return 'Enterprise Project - Code Confidential';
+    } else if (project.confidentialType === 'personal') {
+      return 'Personal Data/Project - Source Protected';
+    }
+    return 'Code Not Available';
   }
 }

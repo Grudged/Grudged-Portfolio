@@ -35,10 +35,18 @@
           <div class="project-links">
             <a [href]="project.liveUrl" class="project-link" target="_blank" *ngIf="project.liveUrl !== '#'">Live Demo</a>
             <a [href]="project.githubUrl" class="project-link" target="_blank" *ngIf="project.githubUrl !== '#'">GitHub</a>
-            <span class="project-note" *ngIf="project.githubUrl === '#'">Enterprise Project - Code Confidential</span>
+            <button class="project-link documentation-btn" (click)="openDocumentation(project)" *ngIf="project.diagrams && project.diagrams.length > 0">Documentation</button>
+            <span class="project-note" *ngIf="project.githubUrl === '#'">{{ getConfidentialMessage(project) }}</span>
           </div>
         </div>
       </div>
     </div>
   </div>
+  
+  <app-documentation-dialog
+    [isOpen]="isDocumentationOpen"
+    [projectTitle]="selectedProjectTitle"
+    [diagrams]="selectedProjectDiagrams"
+    (close)="closeDocumentation()">
+  </app-documentation-dialog>
 </section>

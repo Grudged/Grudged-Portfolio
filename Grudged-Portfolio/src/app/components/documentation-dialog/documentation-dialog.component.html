@@ -1,0 +1,50 @@
+<div class="dialog-backdrop" *ngIf="isOpen" (click)="onBackdropClick($event)">
+  <div class="dialog-container">
+    <div class="dialog-header">
+      <h3>{{ projectTitle }} - Documentation</h3>
+      <button class="close-btn" (click)="closeDialog()">×</button>
+    </div>
+    
+    <div class="dialog-content" *ngIf="diagrams.length > 0">
+      <div class="image-viewer">
+        <img 
+          [src]="diagrams[currentImageIndex]" 
+          [alt]="'Diagram ' + (currentImageIndex + 1)"
+          class="diagram-image">
+        
+        <div class="image-counter" *ngIf="diagrams.length > 1">
+          {{ currentImageIndex + 1 }} / {{ diagrams.length }}
+        </div>
+        
+        <div class="navigation" *ngIf="diagrams.length > 1">
+          <button 
+            class="nav-btn prev" 
+            (click)="previousImage()" 
+            [disabled]="currentImageIndex === 0">
+            ‹
+          </button>
+          <button 
+            class="nav-btn next" 
+            (click)="nextImage()" 
+            [disabled]="currentImageIndex === diagrams.length - 1">
+            ›
+          </button>
+        </div>
+      </div>
+      
+      <div class="thumbnail-strip" *ngIf="diagrams.length > 1">
+        <button 
+          *ngFor="let diagram of diagrams; let i = index"
+          class="thumbnail"
+          [class.active]="i === currentImageIndex"
+          (click)="currentImageIndex = i">
+          <img [src]="diagram" [alt]="'Thumbnail ' + (i + 1)">
+        </button>
+      </div>
+    </div>
+    
+    <div class="no-diagrams" *ngIf="diagrams.length === 0">
+      <p>No documentation diagrams available for this project.</p>
+    </div>
+  </div>
+</div>
