@@ -70,7 +70,12 @@ export class ProjectsComponent {
       githubUrl: 'https://github.com/grudged/nhl-data-projects',
       category: 'Data Analytics',
       links: ['Live Demo', 'View Code'],
-      diagrams: []
+      diagrams: [
+        'System Architecture.png',
+        'Data Flow.png',
+        'Database Schema (Simplified).png',
+        'Deployment Strategy.png'
+      ]
     },
     {
       title: 'DevOps Monitoring Setup',
