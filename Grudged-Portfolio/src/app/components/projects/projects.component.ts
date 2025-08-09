@@ -63,6 +63,16 @@ export class ProjectsComponent {
       githubUrl: '#',
       category: 'DevOps',
       links: ['Documentation', 'Architecture Diagram']
+    },
+    {
+      title: 'Fantasy Author Content Site',
+      description: 'A platform for fantasy author A.M. Oakley to showcase their work, connect with readers, and manage their writing projects.',
+      technologies: ['Angular', 'CSS', 'HTML', 'Content Management'],
+      image: 'FantasyAuthorContentSite.png',
+      liveUrl: 'https://amoakley.com',
+      githubUrl: '#',
+      category: 'Content Management',
+      links: ['Documentation', 'Architecture Diagram']
     }
   ];
 
