@@ -327,4 +327,8 @@ chris  1237   0.5  0.5  2048  1024 vs-code`;
   get commands() {
     return this.terminalCommands;
   }
+
+  public getCommandCount(): number {
+    return Object.keys(this.terminalCommands).length;
+  }
 }

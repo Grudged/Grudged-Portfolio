@@ -1,4 +1,4 @@
-<div class="dev-console-overlay" *ngIf="isVisible" (click)="closeConsole()">
+<div class="dev-console-overlay" @if (isVisible) (click)="closeConsole()">
   <div class="dev-console" (click)="$event.stopPropagation()">
     <div class="console-header">
       <div class="console-title">
@@ -15,12 +15,12 @@
     
     <div class="console-body">
       <div class="terminal-output" #terminalOutput>
-        <div *ngFor="let line of terminalLines; trackBy: trackByFn" 
-             class="terminal-line" 
-             [class]="'line-' + line.type">
-          <span class="timestamp">{{ formatTimestamp(line.timestamp) }}</span>
-          <span class="line-content" [innerHTML]="formatLineContent(line.content)"></span>
-        </div>
+        @for (line of terminalLines; track trackByFn($index, line)) {
+          <div class="terminal-line" [class]="'line-' + line.type">
+            <span class="timestamp">{{ formatTimestamp(line.timestamp) }}</span>
+            <span class="line-content" [innerHTML]="formatLineContent(line.content)"></span>
+          </div>
+        }
       </div>
       
       <div class="terminal-input-container">
@@ -46,7 +46,7 @@
           Online
         </span>
         <span class="status-item">
-          Commands: {{ Object.keys(commands || {}).length }}
+          Commands: {{ getCommandCount() }}
         </span>
         <span class="status-item">
           History: {{ commandHistory.length }}
@@ -57,4 +57,4 @@
       </div>
     </div>
   </div>
-</div>
+}
