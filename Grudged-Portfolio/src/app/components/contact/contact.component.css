@@ -3,6 +3,23 @@
   background: var(--bg-secondary);
 }
 
+/* Developer Breadcrumb */
+.dev-hint {
+  margin-top: 1rem;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  cursor: help;
+}
+
+.dev-hint:hover {
+  opacity: 1;
+}
+
+.dev-hint small {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
