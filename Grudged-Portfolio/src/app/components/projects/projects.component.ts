@@ -41,14 +41,14 @@ export class ProjectsComponent {
       category: 'E-commerce',
       links: ['Live Demo', 'View Code', 'Architecture Diagram'],
       diagrams: [
+        'README.md',  // Put README first as overview
         'System Architecture Diagram.png',
         'Data Scheme (ERD).png',
         'User Flow Diagram.png',
         'Data Flow Diagram.png',
         'Component Hierarchy Diagram.png',
         'State Management Diagram.png',
-        'Tech Stack Diagram.png',
-        'README.md'
+        'Tech Stack Diagram.png'
       ]
     },
     {

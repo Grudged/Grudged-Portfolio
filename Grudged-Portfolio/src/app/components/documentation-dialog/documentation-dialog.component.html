@@ -6,15 +6,23 @@
     </div>
     
     <div class="dialog-content" *ngIf="diagrams.length > 0">
-      <div class="image-viewer">
+      <!-- Content type indicator -->
+      <div class="content-header">
+        <span class="content-type" [class.document]="isCurrentItemMarkdown" [class.diagram]="isCurrentItemImage">
+          <span *ngIf="isCurrentItemMarkdown">📖 Documentation</span>
+          <span *ngIf="isCurrentItemImage">📊 {{ getItemTitle(diagrams[currentImageIndex]) }}</span>
+        </span>
+        <span class="item-counter" *ngIf="diagrams.length > 1">
+          {{ currentImageIndex + 1 }} / {{ diagrams.length }}
+        </span>
+      </div>
+
+      <!-- Image viewer for diagrams -->
+      <div class="image-viewer" *ngIf="isCurrentItemImage">
         <img 
           [src]="diagrams[currentImageIndex]" 
-          [alt]="'Diagram ' + (currentImageIndex + 1)"
+          [alt]="getItemTitle(diagrams[currentImageIndex])"
           class="diagram-image">
-        
-        <div class="image-counter" *ngIf="diagrams.length > 1">
-          {{ currentImageIndex + 1 }} / {{ diagrams.length }}
-        </div>
         
         <div class="navigation" *ngIf="diagrams.length > 1">
           <button 
@@ -31,14 +39,41 @@
           </button>
         </div>
       </div>
+
+      <!-- Markdown content viewer -->
+      <div class="markdown-viewer" *ngIf="isCurrentItemMarkdown">
+        <div class="navigation" *ngIf="diagrams.length > 1">
+          <button 
+            class="nav-btn prev" 
+            (click)="previousImage()" 
+            [disabled]="currentImageIndex === 0">
+            ‹
+          </button>
+          <button 
+            class="nav-btn next" 
+            (click)="nextImage()" 
+            [disabled]="currentImageIndex === diagrams.length - 1">
+            ›
+          </button>
+        </div>
+
+        <div class="markdown-content" *ngIf="!isLoadingMarkdown" [innerHTML]="markdownContent"></div>
+        <div class="loading-spinner" *ngIf="isLoadingMarkdown">Loading documentation...</div>
+      </div>
       
       <div class="thumbnail-strip" *ngIf="diagrams.length > 1">
         <button 
           *ngFor="let diagram of diagrams; let i = index"
           class="thumbnail"
           [class.active]="i === currentImageIndex"
-          (click)="currentImageIndex = i">
-          <img [src]="diagram" [alt]="'Thumbnail ' + (i + 1)">
+          [class.markdown-thumb]="diagram.endsWith('.md')"
+          (click)="selectItem(i)"
+          [title]="getItemTitle(diagram)">
+          <img *ngIf="!diagram.endsWith('.md')" [src]="diagram" [alt]="getItemTitle(diagram)">
+          <div *ngIf="diagram.endsWith('.md')" class="markdown-thumbnail">
+            <span class="icon">📖</span>
+            <span class="label">Documentation</span>
+          </div>
         </button>
       </div>
     </div>
