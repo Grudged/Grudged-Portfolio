@@ -90,14 +90,13 @@ export class ProjectsComponent {
       description: 'Containerized monitoring solution providing comprehensive visibility across multiple servers, web services, and applications in distributed environments.',
       technologies: ['Docker', 'Zabbix', 'Python', 'System Administration'],
       image: 'ZabbixDockerContainer.png',
-      liveUrl: '#',
+      liveUrl: '',
       githubUrl: '#',
       category: 'DevOps',
       links: ['Documentation', 'Architecture Diagram'],
       diagrams: [
         'BACKEND_README.md'
-      ],
-      confidentialType: 'personal'
+      ]
     },
     {
       title: 'Fantasy Author Content Site',
@@ -108,8 +107,7 @@ export class ProjectsComponent {
       githubUrl: '#',
       category: 'Content Management',
       links: ['Documentation', 'Architecture Diagram'],
-      diagrams: [],
-      confidentialType: 'personal'
+      diagrams: []
     }
   ];
 

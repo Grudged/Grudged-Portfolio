@@ -167,6 +167,23 @@
   cursor: pointer;
 }
 
+/* When documentation is the only or primary button */
+.project-links:has(.documentation-btn:only-child) .documentation-btn,
+.project-links:has(.documentation-btn):not(:has(.project-link[href])) .documentation-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+}
+
+.project-links:has(.documentation-btn:only-child) .documentation-btn:hover,
+.project-links:has(.documentation-btn):not(:has(.project-link[href])) .documentation-btn:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
 .project-note {
   font-size: 0.85rem;
   color: var(--text-muted);
