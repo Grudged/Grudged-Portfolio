@@ -22,7 +22,7 @@ export class ProjectsComponent {
     {
       title: 'Enterprise Warehouse Management System',
       description: 'Real-time inventory tracking dashboard that processes live data from receiving through shipping operations, enabling manufacturing teams to make instant decisions with up-to-date information.',
-      technologies: ['Angular', 'JavaScript', 'Real-time APIs', 'SQL Database'],
+      technologies: ['Angular', 'JavaScript', 'Real-time APIs', 'Oracle SQL Database', 'Microsoft Server', 'Automation' , 'Graphs', 'Dashboards'],
       image: 'MaterialRequestExample.png',
       liveUrl: '#',
       githubUrl: '#',
