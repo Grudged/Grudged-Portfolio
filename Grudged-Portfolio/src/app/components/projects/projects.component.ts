@@ -94,7 +94,9 @@ export class ProjectsComponent {
       githubUrl: '#',
       category: 'DevOps',
       links: ['Documentation', 'Architecture Diagram'],
-      diagrams: [],
+      diagrams: [
+        'BACKEND_README.md'
+      ],
       confidentialType: 'personal'
     },
     {
