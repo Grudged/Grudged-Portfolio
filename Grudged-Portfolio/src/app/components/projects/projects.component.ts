@@ -47,7 +47,8 @@ export class ProjectsComponent {
         'Data Flow Diagram.png',
         'Component Hierarchy Diagram.png',
         'State Management Diagram.png',
-        'Tech Stack Diagram.png'
+        'Tech Stack Diagram.png',
+        'README.md'
       ]
     },
     {
