@@ -46,7 +46,7 @@ export class ProjectsComponent {
         'Deployment-Architecture.png',
         'Payment-Process-Flow.png',
         'Active-Listing-Flow.png',
-        'Active_Listing-Schedule.png',
+        'Active-Listing-Schedule.png',
         'AL-Database-Schema.png',
       ]
     },
