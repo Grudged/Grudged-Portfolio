@@ -35,20 +35,19 @@ export class ProjectsComponent {
       title: 'Pokemon Trading Card Marketplace',
       description: 'Full-featured e-commerce platform where collectors can buy and sell trading cards with secure payment processing and real-time price checking from eBay.',
       technologies: ['Angular', 'FastAPI', 'PostgreSQL', 'Stripe API', 'Netlify', 'Railway', 'Docker'],
-      image: 'PokeProjectHomeMarket.png',
+      image: 'GGMarketPlaceHomeV2.png',
       liveUrl: 'https://grudgedgamingsmarketplace.netlify.app',
       githubUrl: '#',
       category: 'E-commerce',
       links: ['Live Demo', 'View Code', 'Architecture Diagram'],
       diagrams: [
         'README.md',  // Put README first as overview
-        'System Architecture Diagram.png',
-        'Data Scheme (ERD).png',
-        'User Flow Diagram.png',
-        'Data Flow Diagram.png',
-        'Component Hierarchy Diagram.png',
-        'State Management Diagram.png',
-        'Tech Stack Diagram.png'
+        'HL-System-Architecture.png',
+        'Deployment-Architecture.png',
+        'Payment-Process-Flow.png',
+        'Active-Listing-Flow.png',
+        'Active_Listing-Schedule.png',
+        'AL-Database-Schema.png',
       ]
     },
     {
