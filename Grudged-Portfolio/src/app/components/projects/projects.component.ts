@@ -36,7 +36,7 @@ export class ProjectsComponent {
       description: 'Full-featured e-commerce platform where collectors can buy and sell trading cards with secure payment processing and real-time price checking from eBay.',
       technologies: ['Angular', 'FastAPI', 'PostgreSQL', 'Stripe API', 'Netlify', 'Railway', 'Docker'],
       image: 'GGMarketPlaceHomeV2.png',
-      liveUrl: 'https://grudgedgamingsmarketplace.netlify.app',
+      liveUrl: 'https://ggsmarketplace.org',
       githubUrl: '#',
       category: 'E-commerce',
       links: ['Live Demo', 'View Code', 'Architecture Diagram'],
