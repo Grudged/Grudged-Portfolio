@@ -32,6 +32,25 @@ export class ProjectsComponent {
       confidentialType: 'enterprise'
     },
     {
+      title: 'GitNarrative',
+      description: 'AI-powered SaaS that transforms git commit history into compelling project narratives. Built with FastAPI, Angular, and AI integration.',
+      technologies: ['Angular', 'TypeScript', 'Real-time APIs', 'PostgreSQL', 'Redis', 'OpenAI API', 'Dashboards', 'GitHub'],
+      image: 'GitNarrativeioHome.png',
+      liveUrl: 'https://gitnarrative.io',
+      githubUrl: '#',
+      category: 'Enterprise',
+      links: ['Live Demo', 'Architecture Diagram'],
+      diagrams: [
+        'GitNarrativeioHome.png',
+        'GitNarrativeioStyles.png',
+        'GitNarrativeioStory.png',
+        'GitNarrativeioFacts.png',
+        'GitNarrativeioDashboard.png',
+        'GitNarrativeioServices.png'
+      ],
+      confidentialType: 'enterprise'
+    },
+    {
       title: 'Pokemon Trading Card Marketplace',
       description: 'Full-featured e-commerce platform where collectors can buy and sell trading cards with secure payment processing and real-time price checking from eBay.',
       technologies: ['Angular', 'FastAPI', 'PostgreSQL', 'Stripe API', 'Netlify', 'Railway', 'Docker'],
