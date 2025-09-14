@@ -69,6 +69,32 @@ export class ProjectsComponent {
         'AL-Database-Schema.png',
       ]
     },
+        {
+      title: 'Dev Garden',
+      description: 'A personal knowledge database that can save web information and search semantically through notes and links using AI embeddings.',
+      technologies: [
+        'Next.js 14', 'React 18', 'TypeScript',
+        'Tailwind CSS', 'Framer Motion',
+        'NextAuth.js', 'Prisma ORM', 'PostgreSQL',
+        'Zod', 'TanStack React Query',
+        'PWA (next-pwa)', 'OpenAI API',
+        'EmailJS', 'AWS S3 (optional)'
+      ],
+      image: 'DGHomePage.png',
+      liveUrl: 'https://dev-garden.io',
+      githubUrl: '#',
+      category: 'Data Storage',
+      links: ['Live Demo', 'View Code', 'Architecture Diagram'],
+      diagrams: [
+        'DGREADME.md',  // Put README first as overview
+        'DGAuthenication.png',
+        'DGDatabaseER.png',
+        'DGHigh_Level_Architecture.png',
+        'DGMiddlewareAPIAccess.png',
+        'DGPWA_ShareTargetFlow.png',
+        'DGRequestFlow_(CreateItem).png',
+      ]
+    },
     {
       title: 'Freelance Time Tracker',
       description: 'Professional time management platform that helps freelancers track billable hours, manage multiple projects, and generate client reports automatically.',
