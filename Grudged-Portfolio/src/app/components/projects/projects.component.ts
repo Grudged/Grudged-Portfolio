@@ -87,7 +87,7 @@ export class ProjectsComponent {
       links: ['Live Demo', 'View Code', 'Architecture Diagram'],
       diagrams: [
         'DGREADME.md',  // Put README first as overview
-        'DGAuthenication.png',
+        'DGAuthentication.png',
         'DGDatabaseER.png',
         'DGHigh_Level_Architecture.png',
         'DGMiddlewareAPIAccess.png',
