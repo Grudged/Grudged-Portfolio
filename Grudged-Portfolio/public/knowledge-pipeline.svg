@@ -52,7 +52,7 @@
 
   <rect x="485" y="215" width="140" height="65" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
   <text x="555" y="242" text-anchor="middle" fill="#22d3ee" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="600">Training Pairs</text>
-  <text x="555" y="262" text-anchor="middle" fill="#94a3b8" font-family="JetBrains Mono,monospace" font-size="10">Q&A · SQL · JSONL</text>
+  <text x="555" y="262" text-anchor="middle" fill="#94a3b8" font-family="JetBrains Mono,monospace" font-size="10">Q&amp;A · SQL · JSONL</text>
 
   <rect x="485" y="300" width="140" height="65" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
   <text x="555" y="327" text-anchor="middle" fill="#fb923c" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="600">RAG Index</text>

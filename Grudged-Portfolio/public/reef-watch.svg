@@ -11,10 +11,11 @@
   <text x="400" y="68" text-anchor="middle" fill="#64748b" font-family="Inter,system-ui,sans-serif" font-size="13">Satellite Coral Reef Monitor · CesiumJS Globe · AI Analysis</text>
 
   <!-- Globe representation -->
-  <circle cx="400" cy="250" r="140" fill="none" stroke="#164e63" stroke-width="1.5"/>
-  <ellipse cx="400" cy="250" rx="140" ry="50" fill="none" stroke="#164e63" stroke-width="0.8"/>
-  <ellipse cx="400" cy="250" rx="100" ry="140" fill="none" stroke="#164e63" stroke-width="0.8"/>
-  <ellipse cx="400" cy="250" rx="50" ry="140" fill="none" stroke="#164e63" stroke-width="0.5"/>
+  <circle cx="400" cy="250" r="140" fill="#0c2d3f" stroke="#22d3ee" stroke-width="2" opacity="0.8"/>
+  <ellipse cx="400" cy="250" rx="140" ry="50" fill="none" stroke="#22d3ee" stroke-width="1.2" opacity="0.4"/>
+  <ellipse cx="400" cy="250" rx="100" ry="140" fill="none" stroke="#22d3ee" stroke-width="1.2" opacity="0.35"/>
+  <ellipse cx="400" cy="250" rx="50" ry="140" fill="none" stroke="#22d3ee" stroke-width="1" opacity="0.25"/>
+  <line x1="260" y1="250" x2="540" y2="250" stroke="#22d3ee" stroke-width="0.8" opacity="0.2"/>
 
   <!-- Reef markers -->
   <circle cx="340" cy="210" r="8" fill="#06b6d4" opacity="0.8"/>
