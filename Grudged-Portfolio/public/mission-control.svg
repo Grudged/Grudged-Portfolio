@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="mc-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0f172a"/><stop offset="100%" stop-color="#1e293b"/></linearGradient>
+    <linearGradient id="mc-accent" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#3b82f6"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#mc-bg)"/>
+
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" fill="#e2e8f0" font-family="Inter,system-ui,sans-serif" font-size="22" font-weight="700">Mission Control</text>
+  <text x="400" y="68" text-anchor="middle" fill="#64748b" font-family="Inter,system-ui,sans-serif" font-size="13">23-View PWA Ops Console</text>
+
+  <!-- Central hub -->
+  <rect x="300" y="190" width="200" height="80" rx="12" fill="url(#mc-accent)" opacity="0.9"/>
+  <text x="400" y="225" text-anchor="middle" fill="#fff" font-family="Inter,system-ui,sans-serif" font-size="15" font-weight="600">Mission Control</text>
+  <text x="400" y="248" text-anchor="middle" fill="#c7d2fe" font-family="Inter,system-ui,sans-serif" font-size="11">Angular PWA · :3100</text>
+
+  <!-- Top row: data sources -->
+  <rect x="40" y="90" width="130" height="56" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="105" y="115" text-anchor="middle" fill="#f59e0b" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="600">Chase Engine</text>
+  <text x="105" y="132" text-anchor="middle" fill="#94a3b8" font-family="Inter,system-ui,sans-serif" font-size="10">Betting · :8888</text>
+
+  <rect x="200" y="90" width="130" height="56" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="265" y="115" text-anchor="middle" fill="#22d3ee" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="600">Data Warehouse</text>
+  <text x="265" y="132" text-anchor="middle" fill="#94a3b8" font-family="Inter,system-ui,sans-serif" font-size="10">39+ Sources · :8555</text>
+
+  <rect x="360" y="90" width="130" height="56" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="425" y="115" text-anchor="middle" fill="#a78bfa" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="600">Crypto Pipeline</text>
+  <text x="425" y="132" text-anchor="middle" fill="#94a3b8" font-family="Inter,system-ui,sans-serif" font-size="10">Aave · Coinbase</text>
+
+  <rect x="520" y="90" width="130" height="56" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="585" y="115" text-anchor="middle" fill="#34d399" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="600">LLC Finances</text>
+  <text x="585" y="132" text-anchor="middle" fill="#94a3b8" font-family="Inter,system-ui,sans-serif" font-size="10">Expenses · Tax</text>
+
+  <rect x="660" y="90" width="100" height="56" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="710" y="115" text-anchor="middle" fill="#fb7185" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="600">Holdings</text>
+  <text x="710" y="132" text-anchor="middle" fill="#94a3b8" font-family="Inter,system-ui,sans-serif" font-size="10">Deal Flow</text>
+
+  <!-- Connection lines top to center -->
+  <line x1="105" y1="146" x2="350" y2="210" stroke="#334155" stroke-width="1" opacity="0.6"/>
+  <line x1="265" y1="146" x2="370" y2="195" stroke="#334155" stroke-width="1" opacity="0.6"/>
+  <line x1="425" y1="146" x2="400" y2="190" stroke="#334155" stroke-width="1" opacity="0.6"/>
+  <line x1="585" y1="146" x2="450" y2="200" stroke="#334155" stroke-width="1" opacity="0.6"/>
+  <line x1="710" y1="146" x2="480" y2="210" stroke="#334155" stroke-width="1" opacity="0.6"/>
+
+  <!-- Bottom row: views -->
+  <rect x="50" y="320" width="100" height="48" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1" opacity="0.8"/>
+  <text x="100" y="342" text-anchor="middle" fill="#93c5fd" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="500">Overview</text>
+  <text x="100" y="357" text-anchor="middle" fill="#64748b" font-family="Inter,system-ui,sans-serif" font-size="9">Dashboard</text>
+
+  <rect x="170" y="320" width="100" height="48" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1" opacity="0.8"/>
+  <text x="220" y="342" text-anchor="middle" fill="#93c5fd" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="500">Betting</text>
+  <text x="220" y="357" text-anchor="middle" fill="#64748b" font-family="Inter,system-ui,sans-serif" font-size="9">Chase Ops</text>
+
+  <rect x="290" y="320" width="100" height="48" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1" opacity="0.8"/>
+  <text x="340" y="342" text-anchor="middle" fill="#93c5fd" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="500">Finance</text>
+  <text x="340" y="357" text-anchor="middle" fill="#64748b" font-family="Inter,system-ui,sans-serif" font-size="9">Net Worth</text>
+
+  <rect x="410" y="320" width="100" height="48" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1" opacity="0.8"/>
+  <text x="460" y="342" text-anchor="middle" fill="#93c5fd" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="500">Infra</text>
+  <text x="460" y="357" text-anchor="middle" fill="#64748b" font-family="Inter,system-ui,sans-serif" font-size="9">Health · Logs</text>
+
+  <rect x="530" y="320" width="100" height="48" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1" opacity="0.8"/>
+  <text x="580" y="342" text-anchor="middle" fill="#93c5fd" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="500">AI Agent</text>
+  <text x="580" y="357" text-anchor="middle" fill="#64748b" font-family="Inter,system-ui,sans-serif" font-size="9">Gemma 4 Chat</text>
+
+  <rect x="650" y="320" width="100" height="48" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1" opacity="0.8"/>
+  <text x="700" y="342" text-anchor="middle" fill="#93c5fd" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="500">+18 more</text>
+  <text x="700" y="357" text-anchor="middle" fill="#64748b" font-family="Inter,system-ui,sans-serif" font-size="9">views</text>
+
+  <!-- Connection lines center to bottom -->
+  <line x1="350" y1="270" x2="100" y2="320" stroke="#334155" stroke-width="1" opacity="0.4"/>
+  <line x1="370" y1="270" x2="220" y2="320" stroke="#334155" stroke-width="1" opacity="0.4"/>
+  <line x1="390" y1="270" x2="340" y2="320" stroke="#334155" stroke-width="1" opacity="0.4"/>
+  <line x1="410" y1="270" x2="460" y2="320" stroke="#334155" stroke-width="1" opacity="0.4"/>
+  <line x1="430" y1="270" x2="580" y2="320" stroke="#334155" stroke-width="1" opacity="0.4"/>
+  <line x1="450" y1="270" x2="700" y2="320" stroke="#334155" stroke-width="1" opacity="0.4"/>
+
+  <!-- Bottom bar: infra -->
+  <rect x="50" y="410" width="700" height="60" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="400" y="435" text-anchor="middle" fill="#475569" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="600" letter-spacing="2">INFRASTRUCTURE</text>
+  <text x="150" y="456" text-anchor="middle" fill="#64748b" font-family="JetBrains Mono,monospace" font-size="10">FastAPI</text>
+  <text x="280" y="456" text-anchor="middle" fill="#64748b" font-family="JetBrains Mono,monospace" font-size="10">PostgreSQL</text>
+  <text x="400" y="456" text-anchor="middle" fill="#64748b" font-family="JetBrains Mono,monospace" font-size="10">WebSockets</text>
+  <text x="520" y="456" text-anchor="middle" fill="#64748b" font-family="JetBrains Mono,monospace" font-size="10">systemd</text>
+  <text x="640" y="456" text-anchor="middle" fill="#64748b" font-family="JetBrains Mono,monospace" font-size="10">Arch Linux</text>
+</svg>

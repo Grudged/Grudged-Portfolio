@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="ce-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0f172a"/><stop offset="100%" stop-color="#1e293b"/></linearGradient>
+    <linearGradient id="ce-accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#f59e0b"/><stop offset="100%" stop-color="#ef4444"/></linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#ce-bg)"/>
+
+  <text x="400" y="45" text-anchor="middle" fill="#e2e8f0" font-family="Inter,system-ui,sans-serif" font-size="22" font-weight="700">Chase Engine</text>
+  <text x="400" y="68" text-anchor="middle" fill="#64748b" font-family="Inter,system-ui,sans-serif" font-size="13">Automated Sports Betting · 6 Leagues · $200 Bankroll</text>
+
+  <!-- League badges -->
+  <rect x="100" y="100" width="70" height="32" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="135" y="121" text-anchor="middle" fill="#fbbf24" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="700">NHL</text>
+  <rect x="190" y="100" width="70" height="32" rx="6" fill="#1e293b" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="225" y="121" text-anchor="middle" fill="#fca5a5" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="700">MLB</text>
+  <rect x="280" y="100" width="70" height="32" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="315" y="121" text-anchor="middle" fill="#93c5fd" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="700">NBA</text>
+  <rect x="370" y="100" width="80" height="32" rx="6" fill="#1e293b" stroke="#ec4899" stroke-width="1.5"/>
+  <text x="410" y="121" text-anchor="middle" fill="#f9a8d4" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="700">WNBA</text>
+  <rect x="470" y="100" width="70" height="32" rx="6" fill="#1e293b" stroke="#22d3ee" stroke-width="1.5"/>
+  <text x="505" y="121" text-anchor="middle" fill="#67e8f9" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="700">EPL</text>
+  <rect x="560" y="100" width="70" height="32" rx="6" fill="#1e293b" stroke="#34d399" stroke-width="1.5"/>
+  <text x="595" y="121" text-anchor="middle" fill="#6ee7b7" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="700">MLS</text>
+
+  <!-- Strategy flow -->
+  <rect x="80" y="170" width="180" height="90" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="170" y="200" text-anchor="middle" fill="#fbbf24" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="600">ESPN Scoreboard</text>
+  <text x="170" y="220" text-anchor="middle" fill="#94a3b8" font-family="JetBrains Mono,monospace" font-size="10">Live scores + odds</text>
+  <text x="170" y="238" text-anchor="middle" fill="#94a3b8" font-family="JetBrains Mono,monospace" font-size="10">Game schedules</text>
+
+  <polygon points="265,215 275,210 275,220" fill="#f59e0b"/>
+  <line x1="260" y1="215" x2="300" y2="215" stroke="#f59e0b" stroke-width="1.5"/>
+
+  <rect x="300" y="170" width="200" height="90" rx="10" fill="url(#ce-accent)" opacity="0.9"/>
+  <text x="400" y="200" text-anchor="middle" fill="#fff" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="700">Chase Strategy</text>
+  <text x="400" y="220" text-anchor="middle" fill="#fef3c7" font-family="JetBrains Mono,monospace" font-size="10">3-game martingale</text>
+  <text x="400" y="238" text-anchor="middle" fill="#fef3c7" font-family="JetBrains Mono,monospace" font-size="10">$2 base unit</text>
+
+  <polygon points="505,215 515,210 515,220" fill="#f59e0b"/>
+  <line x1="500" y1="215" x2="540" y2="215" stroke="#f59e0b" stroke-width="1.5"/>
+
+  <rect x="540" y="170" width="180" height="90" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="630" y="200" text-anchor="middle" fill="#34d399" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="600">William Hill</text>
+  <text x="630" y="220" text-anchor="middle" fill="#94a3b8" font-family="JetBrains Mono,monospace" font-size="10">Odds verification</text>
+  <text x="630" y="238" text-anchor="middle" fill="#94a3b8" font-family="JetBrains Mono,monospace" font-size="10">Manual bet placement</text>
+
+  <!-- Chase sequence visualization -->
+  <text x="400" y="305" text-anchor="middle" fill="#64748b" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="600" letter-spacing="2">CHASE SEQUENCE</text>
+
+  <rect x="120" y="325" width="150" height="65" rx="8" fill="#1e293b" stroke="#22c55e" stroke-width="2"/>
+  <text x="195" y="350" text-anchor="middle" fill="#4ade80" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="700">Game 1</text>
+  <text x="195" y="370" text-anchor="middle" fill="#94a3b8" font-family="JetBrains Mono,monospace" font-size="11">$2.20</text>
+  <text x="195" y="385" text-anchor="middle" fill="#64748b" font-family="Inter,system-ui,sans-serif" font-size="9">auto-start</text>
+
+  <line x1="275" y1="358" x2="315" y2="358" stroke="#475569" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="295" y="350" text-anchor="middle" fill="#ef4444" font-family="Inter,system-ui,sans-serif" font-size="9">LOSS</text>
+
+  <rect x="320" y="325" width="150" height="65" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+  <text x="395" y="350" text-anchor="middle" fill="#fbbf24" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="700">Game 2</text>
+  <text x="395" y="370" text-anchor="middle" fill="#94a3b8" font-family="JetBrains Mono,monospace" font-size="11">~$4.84</text>
+  <text x="395" y="385" text-anchor="middle" fill="#64748b" font-family="Inter,system-ui,sans-serif" font-size="9">recovery</text>
+
+  <line x1="475" y1="358" x2="515" y2="358" stroke="#475569" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="495" y="350" text-anchor="middle" fill="#ef4444" font-family="Inter,system-ui,sans-serif" font-size="9">LOSS</text>
+
+  <rect x="520" y="325" width="150" height="65" rx="8" fill="#1e293b" stroke="#ef4444" stroke-width="2"/>
+  <text x="595" y="350" text-anchor="middle" fill="#fca5a5" font-family="Inter,system-ui,sans-serif" font-size="14" font-weight="700">Game 3</text>
+  <text x="595" y="370" text-anchor="middle" fill="#94a3b8" font-family="JetBrains Mono,monospace" font-size="11">~$15.18</text>
+  <text x="595" y="385" text-anchor="middle" fill="#64748b" font-family="Inter,system-ui,sans-serif" font-size="9">final recovery</text>
+
+  <!-- Bottom stats -->
+  <rect x="100" y="425" width="160" height="50" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+  <text x="180" y="448" text-anchor="middle" fill="#94a3b8" font-family="Inter,system-ui,sans-serif" font-size="11">Backtested ROI</text>
+  <text x="180" y="466" text-anchor="middle" fill="#4ade80" font-family="JetBrains Mono,monospace" font-size="14" font-weight="700">+17-30%</text>
+
+  <rect x="320" y="425" width="160" height="50" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+  <text x="400" y="448" text-anchor="middle" fill="#94a3b8" font-family="Inter,system-ui,sans-serif" font-size="11">Stack</text>
+  <text x="400" y="466" text-anchor="middle" fill="#64748b" font-family="JetBrains Mono,monospace" font-size="11">FastAPI · SQLite · systemd</text>
+
+  <rect x="540" y="425" width="160" height="50" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+  <text x="620" y="448" text-anchor="middle" fill="#94a3b8" font-family="Inter,system-ui,sans-serif" font-size="11">Port</text>
+  <text x="620" y="466" text-anchor="middle" fill="#64748b" font-family="JetBrains Mono,monospace" font-size="14" font-weight="700">:8888</text>
+</svg>
