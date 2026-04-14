@@ -16,51 +16,128 @@ export class ProjectsComponent {
   selectedProjectTitle = '';
   selectedProjectDiagrams: string[] = [];
   
-  categories = ['All', 'Enterprise', 'Full Stack', 'E-commerce', 'Data Analytics', 'DevOps'];
-  
+  categories = ['All', 'Automation', 'AI/ML', 'Full Stack', 'Data', 'IoT/Hardware'];
+
   projects = [
     {
-      title: 'Enterprise Warehouse Management System',
-      description: 'Real-time inventory tracking dashboard that processes live data from receiving through shipping operations, enabling manufacturing teams to make instant decisions with up-to-date information.',
-      technologies: ['Angular', 'JavaScript', 'Real-time APIs', 'Oracle SQL Database', 'Microsoft Server', 'Automation' , 'Graphs', 'Dashboards'],
-      image: 'MaterialRequestExample.png',
-      liveUrl: '#',
+      title: 'Mission Control',
+      description: 'PWA ops console with 23 views for monitoring and managing all services, data pipelines, betting operations, LLC finances, crypto portfolio, and infrastructure health. The central nervous system for everything I build.',
+      technologies: ['Angular', 'FastAPI', 'PostgreSQL', 'WebSockets', 'PWA', 'Gemma 4 AI Agent'],
+      image: '',
+      liveUrl: '',
       githubUrl: '#',
-      category: 'Enterprise',
-      links: ['Live Demo', 'Case Study'],
+      category: 'Automation',
+      links: [],
       diagrams: [],
-      confidentialType: 'enterprise'
+      confidentialType: 'personal'
     },
     {
-      title: 'GitNarrative',
-      description: 'AI-powered SaaS that transforms git commit history into compelling project narratives. Built with FastAPI, Angular, and AI integration.',
-      technologies: ['Angular', 'TypeScript', 'Real-time APIs', 'PostgreSQL', 'Redis', 'OpenAI API', 'Dashboards', 'GitHub'],
-      image: 'GitNarrativeioHome.png',
-      liveUrl: 'https://gitnarrative.io',
+      title: 'Knowledge Pipeline',
+      description: 'Self-improving AI system: 39+ data collectors feed a central warehouse, a nightly compiler distills it into reports and training pairs, and a LoRA fine-tune runs on Gemma 4 locally. The system literally gets smarter every night.',
+      technologies: ['Python', 'MLX', 'Gemma 4', 'LoRA', 'RAG', 'SQLite', 'systemd'],
+      image: '',
+      liveUrl: '',
       githubUrl: '#',
-      category: 'Enterprise',
-      links: ['Live Demo', 'Architecture Diagram'],
-      diagrams: [
-        'GitNarrativeioHome.png',
-        'GitNarrativeioStyles.png',
-        'GitNarrativeioStory.png',
-        'GitNarrativeioFacts.png',
-        'GitNarrativeioDashboard.png',
-        'GitNarrativeioServices.png'
-      ],
-      confidentialType: 'enterprise'
+      category: 'AI/ML',
+      links: [],
+      diagrams: [],
+      confidentialType: 'personal'
     },
     {
-      title: 'Pokemon Trading Card Marketplace',
-      description: 'Full-featured e-commerce platform where collectors can buy and sell trading cards with secure payment processing and real-time price checking from eBay.',
-      technologies: ['Angular', 'FastAPI', 'PostgreSQL', 'Stripe API', 'Netlify', 'Railway', 'Docker'],
+      title: 'Chase Engine',
+      description: 'Automated sports betting bot running chase strategies across NHL, MLB, NBA, WNBA, EPL, and MLS. Manages bankroll, tracks sequences, and places bets based on backtested models using William Hill odds.',
+      technologies: ['Python', 'FastAPI', 'SQLite', 'APScheduler', 'ESPN API', 'systemd'],
+      image: '',
+      liveUrl: '',
+      githubUrl: '#',
+      category: 'Automation',
+      links: [],
+      diagrams: [],
+      confidentialType: 'personal'
+    },
+    {
+      title: 'EditForge',
+      description: 'AI-powered manuscript editor with group character chat. Writers can have conversations with their own characters powered by AI, getting in-voice feedback on scenes and dialogue.',
+      technologies: ['Angular', 'FastAPI', 'PostgreSQL', 'AI Chat', 'WebSockets'],
+      image: '',
+      liveUrl: '',
+      githubUrl: '#',
+      category: 'Full Stack',
+      links: [],
+      diagrams: [],
+      confidentialType: 'personal'
+    },
+    {
+      title: 'Reef Watch',
+      description: 'Satellite imagery analysis platform for monitoring coral reef health worldwide. Interactive CesiumJS globe with AI-driven reef condition assessments from real satellite data.',
+      technologies: ['FastAPI', 'CesiumJS', 'Satellite APIs', 'AI Analysis', 'GeoJSON'],
+      image: '',
+      liveUrl: '',
+      githubUrl: '#',
+      category: 'Data',
+      links: [],
+      diagrams: [],
+      confidentialType: 'personal'
+    },
+    {
+      title: 'Data Warehouse & Collectors',
+      description: '39+ automated collectors gathering data from sports APIs, crypto markets, SEC EDGAR filings, DeFi protocols, weather, economics, and more. Central SQLite warehouse with dynamic schema and a REST API.',
+      technologies: ['Python', 'SQLite', 'REST APIs', 'systemd Timers', 'Playwright'],
+      image: '',
+      liveUrl: '',
+      githubUrl: '#',
+      category: 'Data',
+      links: [],
+      diagrams: [],
+      confidentialType: 'personal'
+    },
+    {
+      title: 'RF Tomography',
+      description: '5-node ESP32-C3 mesh network measuring WiFi signal attenuation to detect motion and presence through walls. FastAPI backend with real-time visualization in Mission Control.',
+      technologies: ['ESP32-C3', 'MicroPython', 'FastAPI', 'WiFi CSI', 'Real-time'],
+      image: '',
+      liveUrl: '',
+      githubUrl: '#',
+      category: 'IoT/Hardware',
+      links: [],
+      diagrams: [],
+      confidentialType: 'personal'
+    },
+    {
+      title: 'StarBrain Academy',
+      description: 'Interactive learning PWA for kids covering 6 subjects with mini-games and adaptive difficulty. Built for my own kids, 15K+ lines of code with zero external dependencies for the learning engine.',
+      technologies: ['Vite', 'Preact', 'TypeScript', 'PWA', 'CSS Animations'],
+      image: '',
+      liveUrl: '',
+      githubUrl: '#',
+      category: 'Full Stack',
+      links: [],
+      diagrams: [],
+      confidentialType: 'personal'
+    },
+    {
+      title: 'Stream Engine',
+      description: 'Twitch bot for my sim racing streams with iRacing telemetry, WoW character stats via Blizzard API, Gemma AI chat responses, predictions, and full chat logging.',
+      technologies: ['Python', 'FastAPI', 'Twitch API', 'Blizzard API', 'Gemma 4', 'SQLite'],
+      image: '',
+      liveUrl: '',
+      githubUrl: '#',
+      category: 'Automation',
+      links: [],
+      diagrams: [],
+      confidentialType: 'personal'
+    },
+    {
+      title: 'GGS Marketplace',
+      description: 'E-commerce platform for Pokemon trading cards with Stripe payments, real-time eBay price checking via Playwright scraper, and a $21.9K tracked collection across 56 graded cards.',
+      technologies: ['Angular', 'FastAPI', 'PostgreSQL', 'Stripe', 'Playwright'],
       image: 'GGMarketPlaceHomeV2.png',
-      liveUrl: 'https://ggsmarketplace.org',
+      liveUrl: 'https://ggsmarketplace.com',
       githubUrl: '#',
-      category: 'E-commerce',
-      links: ['Live Demo', 'View Code', 'Architecture Diagram'],
+      category: 'Full Stack',
+      links: ['Live Demo'],
       diagrams: [
-        'README.md',  // Put README first as overview
+        'README.md',
         'HL-System-Architecture.png',
         'Deployment-Architecture.png',
         'Payment-Process-Flow.png',
@@ -69,88 +146,15 @@ export class ProjectsComponent {
         'AL-Database-Schema.png',
       ]
     },
-        {
-      title: 'Dev Garden',
-      description: 'A personal knowledge database that can save web information and search semantically through notes and links using AI embeddings.',
-      technologies: [
-        'Next.js 14', 'React 18', 'TypeScript',
-        'Tailwind CSS', 'Framer Motion',
-        'NextAuth.js', 'Prisma ORM', 'PostgreSQL',
-        'Zod', 'TanStack React Query',
-        'PWA (next-pwa)', 'OpenAI API',
-        'EmailJS', 'AWS S3 (optional)'
-      ],
-      image: 'DGHomePage.png',
-      liveUrl: 'https://dev-garden.io',
-      githubUrl: '#',
-      category: 'Data Storage',
-      links: ['Live Demo', 'View Code', 'Architecture Diagram'],
-      diagrams: [
-        'DGREADME.md',  // Put README first as overview
-        'DGAuthentication.png',
-        'DGDatabaseER.png',
-        'DGHigh_Level_Architecture.png',
-        'DGMiddlewareAPIAccess.png',
-        'DGPWA_ShareTargetFlow.png',
-        'DGRequestFlow_(CreateItem).png',
-      ]
-    },
     {
-      title: 'Freelance Time Tracker',
-      description: 'Professional time management platform that helps freelancers track billable hours, manage multiple projects, and generate client reports automatically.',
-      technologies: ['Angular', 'Node.js', 'Express', 'MongoDB', 'JWT Auth'],
-      image: 'FreelanceTTDashboard.png',
-      liveUrl: '#',
-      githubUrl: 'https://github.com/grudged/FreelanceTimeTracker',
-      category: 'Full Stack',
-      links: ['Live Demo', 'View Code'],
-      diagrams: [
-        'Component Hierachy (Frontend).png',
-        'Database Schema (Simplified ERD).png',
-        'Deployment and Monitoring.png',
-        'Data Flow.png',
-        'User Flow.png',
-        'System ArchitectureTT.png'
-      ]
-    },
-    {
-      title: 'Sports Analytics Dashboard',
-      description: 'Interactive data visualization platform displaying NHL and NFL player statistics with advanced filtering, helping fantasy sports enthusiasts make informed decisions.',
-      technologies: ['Angular', 'Python', 'Flask', 'PostgreSQL'],
-      image: 'SportsDataNHL.png',
-      liveUrl: 'https://nhl-data-visualizer.netlify.app/',
-      githubUrl: 'https://github.com/grudged/nhl-data-projects',
-      category: 'Data Analytics',
-      links: ['Live Demo', 'View Code'],
-      diagrams: [
-        'System Architecture.png',
-        'Data Flow.png',
-        'Database Schema (Simplified).png',
-        'Deployment Strategy.png'
-      ]
-    },
-    {
-      title: 'DevOps Monitoring Setup',
-      description: 'Containerized monitoring solution providing comprehensive visibility across multiple servers, web services, and applications in distributed environments.',
-      technologies: ['Docker', 'Zabbix', 'Python', 'System Administration'],
-      image: 'ZabbixDockerContainer.png',
-      liveUrl: '',
-      githubUrl: '#',
-      category: 'DevOps',
-      links: ['Documentation', 'Architecture Diagram'],
-      diagrams: [
-        'BACKEND_README.md'
-      ]
-    },
-    {
-      title: 'Fantasy Author Content Site',
-      description: 'A platform for fantasy author A.M. Oakley to showcase their work, connect with readers, and manage their writing projects.',
-      technologies: ['Angular', 'CSS', 'HTML', 'Content Management'],
+      title: 'A.M. Oakley',
+      description: 'Author platform for my fiction writing under the pen name A.M. Oakley. Showcases published work, connects with readers, and ties into the EditForge manuscript workflow.',
+      technologies: ['Angular', 'TypeScript', 'Netlify'],
       image: 'AMOakleyHome.jpg',
       liveUrl: 'https://amoakley.com',
       githubUrl: '#',
-      category: 'Content Management',
-      links: ['Documentation', 'Architecture Diagram'],
+      category: 'Full Stack',
+      links: ['Live Demo'],
       diagrams: []
     }
   ];
