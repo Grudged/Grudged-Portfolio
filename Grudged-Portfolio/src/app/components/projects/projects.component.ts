@@ -156,6 +156,28 @@ export class ProjectsComponent {
       category: 'Full Stack',
       links: ['Live Demo'],
       diagrams: []
+    },
+    {
+      title: 'Dev Garden',
+      description: 'Personal knowledge database that captured web content and searched notes semantically with AI embeddings, Chrome/VS Code extensions, and a self-hostable Next.js app. Shipped September 2025. Retired April 2026 after ChatGPT and Claude memory features displaced the standalone knowledge-tool problem space for my workflow.',
+      technologies: ['Next.js 14', 'TypeScript', 'Prisma', 'PostgreSQL', 'pgvector', 'OpenAI', 'LangChain', 'BullMQ', 'NextAuth'],
+      image: 'DGHomePage.png',
+      liveUrl: '',
+      githubUrl: '#',
+      category: 'Full Stack',
+      links: [],
+      diagrams: [
+        'DGREADME.md',
+        'DGAuthentication.png',
+        'DGDatabaseER.png',
+        'DGHigh_Level_Architecture.png',
+        'DGMiddlewareAPIAccess.png',
+        'DGPWA_ShareTargetFlow.png',
+        'DGRequestFlow_(CreateItem).png',
+      ],
+      confidentialType: 'personal',
+      retired: true,
+      retiredDate: 'April 2026'
     }
   ];
 

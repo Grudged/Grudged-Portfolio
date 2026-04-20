@@ -1,7 +1,7 @@
 <section class="projects" id="projects">
   <div class="container">
     <h2 class="section-title">What I'm Building</h2>
-    <p class="section-subtitle">Active projects under Grudged LLC &mdash; automation, AI, data, and products</p>
+    <p class="section-subtitle">Projects under Grudged LLC &mdash; automation, AI, data, and products</p>
     
     <!-- Category Filter -->
     <div class="category-filters">
@@ -15,28 +15,32 @@
     </div>
     
     <div class="projects-grid">
-      <div class="project-card" *ngFor="let project of filteredProjects">
+      <div class="project-card" [class.retired]="project.retired" *ngFor="let project of filteredProjects">
         <div class="project-image">
           <img [src]="project.image" [alt]="project.title + ' - Project Screenshot'" loading="lazy" width="400" height="250">
           <div class="placeholder-project" *ngIf="false">Project Image</div>
+          <span class="retired-ribbon" *ngIf="project.retired">Retired</span>
         </div>
-        
+
         <div class="project-content">
           <div class="project-header">
             <h3 class="project-title">{{ project.title }}</h3>
-            <span class="project-category">{{ project.category }}</span>
+            <div class="project-badges">
+              <span class="project-category">{{ project.category }}</span>
+              <span class="retired-badge" *ngIf="project.retired">Retired · {{ project.retiredDate }}</span>
+            </div>
           </div>
           <p class="project-description">{{ project.description }}</p>
-          
+
           <div class="project-technologies">
             <span class="tech-tag" *ngFor="let tech of project.technologies">{{ tech }}</span>
           </div>
-          
+
           <div class="project-links">
             <a [href]="project.liveUrl" class="project-link" target="_blank" *ngIf="project.liveUrl && project.liveUrl !== '#' && project.liveUrl !== ''">Live Demo</a>
             <a [href]="project.githubUrl" class="project-link" target="_blank" *ngIf="project.githubUrl !== '#'">GitHub</a>
             <button class="project-link documentation-btn" (click)="openDocumentation(project)" *ngIf="project.diagrams && project.diagrams.length > 0">Documentation</button>
-            <span class="project-note" *ngIf="project.githubUrl === '#'">{{ getConfidentialMessage(project) }}</span>
+            <span class="project-note" *ngIf="project.githubUrl === '#' && !project.retired">{{ getConfidentialMessage(project) }}</span>
           </div>
         </div>
       </div>

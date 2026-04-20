@@ -116,7 +116,64 @@
   border-radius: 12px;
   font-size: 0.75rem;
   font-weight: 500;
+}
+
+.project-badges {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.35rem;
   margin-left: 1rem;
+  flex-shrink: 0;
+}
+
+.retired-badge {
+  background: rgba(180, 83, 9, 0.12);
+  color: #b45309;
+  border: 1px solid rgba(180, 83, 9, 0.35);
+  padding: 0.2rem 0.55rem;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.dark-theme .retired-badge {
+  background: rgba(251, 191, 36, 0.12);
+  color: #fbbf24;
+  border-color: rgba(251, 191, 36, 0.35);
+}
+
+.project-card.retired .project-image {
+  position: relative;
+}
+
+.project-card.retired .project-image img {
+  filter: grayscale(0.45);
+  opacity: 0.78;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.project-card.retired:hover .project-image img {
+  filter: grayscale(0.15);
+  opacity: 0.95;
+}
+
+.retired-ribbon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(17, 24, 39, 0.82);
+  color: #fbbf24;
+  padding: 0.3rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .project-description {
