@@ -56,14 +56,14 @@ export class ProjectsComponent {
       confidentialType: 'personal'
     },
     {
-      title: 'EditForge',
-      description: 'AI-powered manuscript editor with group character chat. Writers can have conversations with their own characters powered by AI, getting in-voice feedback on scenes and dialogue.',
+      title: 'CharacterQuill',
+      description: 'AI-powered companion for fiction authors. Build characters, chat with them via group AI for in-voice feedback, visualize plot with story maps, generate portraits, and use randomizers for scene and name ideas.',
       technologies: ['Angular', 'FastAPI', 'PostgreSQL', 'AI Chat', 'WebSockets'],
       image: 'editforge.svg',
-      liveUrl: '',
+      liveUrl: 'https://characterquill.com',
       githubUrl: '#',
       category: 'Full Stack',
-      links: [],
+      links: ['Live Demo'],
       diagrams: [],
       confidentialType: 'personal'
     },
@@ -92,18 +92,6 @@ export class ProjectsComponent {
       confidentialType: 'personal'
     },
     {
-      title: 'RF Tomography',
-      description: '5-node ESP32-C3 mesh network measuring WiFi signal attenuation to detect motion and presence through walls. FastAPI backend with real-time visualization in Mission Control.',
-      technologies: ['ESP32-C3', 'MicroPython', 'FastAPI', 'WiFi CSI', 'Real-time'],
-      image: 'rf-tomography.svg',
-      liveUrl: '',
-      githubUrl: '#',
-      category: 'IoT/Hardware',
-      links: [],
-      diagrams: [],
-      confidentialType: 'personal'
-    },
-    {
       title: 'StarBrain Academy',
       description: 'Interactive learning PWA for kids covering 6 subjects with mini-games and adaptive difficulty. Built for my own kids, 15K+ lines of code with zero external dependencies for the learning engine.',
       technologies: ['Vite', 'Preact', 'TypeScript', 'PWA', 'CSS Animations'],
@@ -120,10 +108,10 @@ export class ProjectsComponent {
       description: 'Twitch bot for my sim racing streams with iRacing telemetry, WoW character stats via Blizzard API, Gemma AI chat responses, predictions, and full chat logging.',
       technologies: ['Python', 'FastAPI', 'Twitch API', 'Blizzard API', 'Gemma 4', 'SQLite'],
       image: 'stream-engine.svg',
-      liveUrl: '',
+      liveUrl: 'https://twitch.tv/grudgedgaming',
       githubUrl: '#',
       category: 'Automation',
-      links: [],
+      links: ['Live Demo'],
       diagrams: [],
       confidentialType: 'personal'
     },
@@ -132,7 +120,7 @@ export class ProjectsComponent {
       description: 'E-commerce platform for Pokemon trading cards with Stripe payments, real-time eBay price checking via Playwright scraper, and a $21.9K tracked collection across 56 graded cards.',
       technologies: ['Angular', 'FastAPI', 'PostgreSQL', 'Stripe', 'Playwright'],
       image: 'GGMarketPlaceHomeV2.png',
-      liveUrl: 'https://ggsmarketplace.com',
+      liveUrl: 'https://ggsmarketplace.org',
       githubUrl: '#',
       category: 'Full Stack',
       links: ['Live Demo'],
