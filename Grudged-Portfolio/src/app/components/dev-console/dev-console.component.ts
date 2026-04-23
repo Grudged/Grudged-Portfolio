@@ -48,7 +48,7 @@ export class DevConsoleComponent implements OnInit, OnDestroy, AfterViewInit {
     'fortune': () => this.getRandomQuote(),
     'matrix': () => { this.startMatrixEffect(); return 'Entering the Matrix...'; },
     'konami': () => '🎮 You found the secret! The Konami Code: ↑↑↓↓←→←→BA',
-    'hire': () => '💼 Excellent choice! Let\'s discuss opportunities: chrismoore044@gmail.com',
+    'hire': () => '💼 Excellent choice! Let\'s discuss opportunities: CMoore@grudged.io',
     'coffee': () => '☕ *brewing coffee* ...perfect fuel for coding!',
     'sudo': () => 'chris is not in the sudoers file. This incident will be reported.',
     'exit': () => { this.closeConsole(); return 'Goodbye!'; },

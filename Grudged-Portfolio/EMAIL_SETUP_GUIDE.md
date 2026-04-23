@@ -55,7 +55,7 @@ export const emailConfig = {
   publicKey: 'user_abcd1234efgh5678',     // Your actual public key
   serviceId: 'service_xyz789',            // Your service ID
   templateId: 'template_abc123',          // Your template ID
-  toEmail: 'Chrismoore044@gmail.com'
+  toEmail: 'CMoore@grudged.io'
 };
 ```
 

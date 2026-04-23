@@ -12,7 +12,7 @@ export const emailConfig = {
   templateId: 'template_izo1l9b', // Replace with your template ID
   
   // Your email where messages will be sent
-  toEmail: 'Chrismoore044@gmail.com'
+  toEmail: 'CMoore@grudged.io'
 };
 
 // Example values (replace with your actual ones):

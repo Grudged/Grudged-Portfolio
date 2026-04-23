@@ -29,6 +29,6 @@ export class App {
     console.log('%c💡 Hint: Some classic gaming knowledge might unlock hidden features...', 'color: #4ecdc4; font-size: 12px;');
     console.log('%c🕹️ Try the legendary cheat code: ↑↑↓↓←→←→BA', 'color: #ffd700; font-size: 12px;');
     console.log('%c🚀 Built with Angular 18 + TypeScript', 'color: #888; font-size: 10px;');
-    console.log('%c📧 Contact: chrismoore044@gmail.com', 'color: #888; font-size: 10px;');
+    console.log('%c📧 Contact: CMoore@grudged.io', 'color: #888; font-size: 10px;');
   }
 }
