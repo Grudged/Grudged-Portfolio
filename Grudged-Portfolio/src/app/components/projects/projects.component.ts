@@ -16,7 +16,7 @@ export class ProjectsComponent {
   selectedProjectTitle = '';
   selectedProjectDiagrams: string[] = [];
   
-  categories = ['All', 'Automation', 'AI/ML', 'Full Stack', 'Data', 'IoT/Hardware'];
+  categories = ['All', 'Automation', 'AI/ML', 'Full Stack', 'Data', 'Enterprise', 'IoT/Hardware'];
 
   projects = [
     {
@@ -132,6 +132,18 @@ export class ProjectsComponent {
       category: 'Full Stack',
       links: ['Live Demo'],
       diagrams: []
+    },
+    {
+      title: 'Enterprise Warehouse Management System',
+      description: 'Real-time inventory tracking dashboard that processes live data from receiving through shipping operations, giving manufacturing teams instant visibility into material requests, putaway queues, and status transitions across the floor.',
+      technologies: ['Angular', 'JavaScript', 'Real-time APIs', 'Oracle SQL', 'Microsoft Server', 'Automation', 'Dashboards'],
+      image: 'MaterialRequestExample.png',
+      liveUrl: '',
+      githubUrl: '#',
+      category: 'Enterprise',
+      links: [],
+      diagrams: [],
+      confidentialType: 'enterprise'
     },
     {
       title: 'Dev Garden',
