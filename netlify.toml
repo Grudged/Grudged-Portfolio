@@ -9,6 +9,20 @@
   # Node.js version (Angular 20 requires Node.js 20.19+ or 22.12+)
   NODE_VERSION = "20.19.0"
 
+# Retired domain — permanent 301 to chris-moore.dev.
+# Must come BEFORE the SPA catch-all so it matches first.
+[[redirects]]
+  from = "https://dev-garden.io/*"
+  to = "https://chris-moore.dev/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.dev-garden.io/*"
+  to = "https://chris-moore.dev/:splat"
+  status = 301
+  force = true
+
 # Redirect rules for Angular single page application
 [[redirects]]
   from = "/*"
