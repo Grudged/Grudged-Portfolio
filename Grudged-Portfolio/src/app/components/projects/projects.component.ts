@@ -23,7 +23,7 @@ export class ProjectsComponent {
       title: 'Mission Control',
       description: 'PWA ops console with 23 views for monitoring and managing all services, data pipelines, betting operations, LLC finances, crypto portfolio, and infrastructure health. The central nervous system for everything I build.',
       technologies: ['Angular', 'FastAPI', 'PostgreSQL', 'WebSockets', 'PWA', 'Gemma 4 AI Agent'],
-      image: 'mission-control.svg',
+      image: 'screenshots/mission-control.png',
       liveUrl: '',
       githubUrl: '#',
       category: 'Automation',
