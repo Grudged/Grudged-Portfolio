@@ -10,18 +10,14 @@
   NODE_VERSION = "20.19.0"
 
 # Retired domain — permanent 301 to chris-moore.dev.
+# Host-based match with conditions (Netlify's documented host-redirect pattern).
 # Must come BEFORE the SPA catch-all so it matches first.
 [[redirects]]
-  from = "https://dev-garden.io/*"
+  from = "/*"
   to = "https://chris-moore.dev/:splat"
   status = 301
   force = true
-
-[[redirects]]
-  from = "https://www.dev-garden.io/*"
-  to = "https://chris-moore.dev/:splat"
-  status = 301
-  force = true
+  conditions = {Host = ["dev-garden.io", "www.dev-garden.io"]}
 
 # Redirect rules for Angular single page application
 [[redirects]]
