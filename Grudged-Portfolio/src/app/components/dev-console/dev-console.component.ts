@@ -1,5 +1,5 @@
-import { Component, OnInit, OnDestroy, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, OnInit, OnDestroy, ElementRef, ViewChild, AfterViewInit, Inject, PLATFORM_ID } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { KonamiService } from '../../services/konami.service';
 import { Subscription } from 'rxjs';
@@ -57,7 +57,14 @@ export class DevConsoleComponent implements OnInit, OnDestroy, AfterViewInit {
     'history': () => this.getCommandHistory()
   };
 
-  constructor(private konamiService: KonamiService) {}
+  private readonly isBrowser: boolean;
+
+  constructor(
+    private konamiService: KonamiService,
+    @Inject(PLATFORM_ID) platformId: object
+  ) {
+    this.isBrowser = isPlatformBrowser(platformId);
+  }
 
   ngOnInit() {
     this.subscription = this.konamiService.devMode$.subscribe(isActive => {
@@ -70,7 +77,10 @@ export class DevConsoleComponent implements OnInit, OnDestroy, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    this.setupKeyboardHandlers();
+    // Keyboard handlers need document — skip during SSR prerender.
+    if (this.isBrowser) {
+      this.setupKeyboardHandlers();
+    }
   }
 
   ngOnDestroy() {
