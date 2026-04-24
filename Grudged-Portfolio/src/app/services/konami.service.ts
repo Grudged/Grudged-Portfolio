@@ -1,4 +1,5 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
@@ -8,11 +9,13 @@ export class KonamiService {
   private konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'KeyB', 'KeyA'];
   private konamiIndex = 0;
   private devModeActive = new BehaviorSubject<boolean>(false);
-  
+
   public devMode$ = this.devModeActive.asObservable();
 
-  constructor() {
-    this.setupGlobalListener();
+  constructor(@Inject(PLATFORM_ID) private platformId: object) {
+    if (isPlatformBrowser(this.platformId)) {
+      this.setupGlobalListener();
+    }
   }
 
   private setupGlobalListener() {
