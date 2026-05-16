@@ -32,9 +32,9 @@ function isProbe(path: string): boolean {
 export default async (request: Request, context: Context) => {
   const url = new URL(request.url);
 
-  if (SKIP_EXT.test(url.pathname)) return;
-  if (url.pathname.startsWith("/.netlify/")) return;
-
+  // Probe check runs BEFORE the static-asset skip — several probe paths end
+  // in .json (service-account.json, credentials.json, etc) and would otherwise
+  // sneak through to the SPA catch-all.
   const ua = request.headers.get("user-agent") || "";
   const referer = request.headers.get("referer") || "";
 
@@ -59,6 +59,10 @@ export default async (request: Request, context: Context) => {
       },
     });
   }
+
+  // Static assets we don't care to log (must come after probe check).
+  if (SKIP_EXT.test(url.pathname)) return;
+  if (url.pathname.startsWith("/.netlify/")) return;
 
   console.log(JSON.stringify({
     ts: new Date().toISOString(),
