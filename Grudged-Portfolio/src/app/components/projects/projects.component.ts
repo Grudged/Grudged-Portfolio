@@ -68,6 +68,18 @@ export class ProjectsComponent {
       confidentialType: 'personal'
     },
     {
+      title: 'FirstEmbark',
+      description: 'Free, no-login career platform for new graduates. Take a quick interest assessment or enter your degree, get matched to real careers using federal O*NET data, then find training programs, free career centers, and apprenticeships near you — built to give first-time job seekers a fair starting point.',
+      technologies: ['FastAPI', 'Vanilla JS', 'O*NET API', 'CareerOneStop API', 'SQLite', 'Hetzner / Coolify'],
+      image: 'screenshots/firstembark.png',
+      liveUrl: 'https://firstembark.com',
+      githubUrl: '#',
+      category: 'Full Stack',
+      links: ['Live Demo'],
+      diagrams: [],
+      confidentialType: 'personal'
+    },
+    {
       title: 'Reef Watch',
       description: 'Satellite imagery analysis platform for monitoring coral reef health worldwide. Interactive CesiumJS globe with AI-driven reef condition assessments from real satellite data.',
       technologies: ['FastAPI', 'CesiumJS', 'Satellite APIs', 'AI Analysis', 'GeoJSON'],
