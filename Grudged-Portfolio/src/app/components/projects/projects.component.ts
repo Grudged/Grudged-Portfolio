@@ -80,6 +80,17 @@ export class ProjectsComponent {
       confidentialType: 'personal'
     },
     {
+      title: 'Open Scholarships',
+      description: 'A free, open directory of scholarships and student aid — no ads, no login, no selling student data, which is the entire business model of every other scholarship site. Records are curated from official sources, human-verified through a review queue, and published as openly-licensed, machine-readable data anyone can use or contribute to. The free, open version that nobody had built, because aggregators keep the data proprietary.',
+      technologies: ['FastAPI', 'Gemma 4', 'Playwright', 'JSON Schema', 'GitHub Actions', 'Hetzner / Coolify', 'CC BY 4.0'],
+      image: 'screenshots/open-scholarships.png',
+      liveUrl: 'https://scholarships.grudged.io',
+      githubUrl: 'https://github.com/Grudged/open-scholarships',
+      category: 'Full Stack',
+      links: [],
+      diagrams: []
+    },
+    {
       title: 'Reef Watch',
       description: 'Satellite imagery analysis platform for monitoring coral reef health worldwide. Interactive CesiumJS globe with AI-driven reef condition assessments from real satellite data.',
       technologies: ['FastAPI', 'CesiumJS', 'Satellite APIs', 'AI Analysis', 'GeoJSON'],
