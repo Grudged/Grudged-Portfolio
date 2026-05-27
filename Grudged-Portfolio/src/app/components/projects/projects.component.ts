@@ -91,6 +91,17 @@ export class ProjectsComponent {
       diagrams: []
     },
     {
+      title: 'Civic Lens',
+      description: `Plain-English briefs on Clark County government meetings. It reads the county public Legistar record, uses Gemma 4 to summarize every agenda item in plain language, pulls roll-call votes, tags topics, links each location to a map, and explains civic jargon with hover tooltips — so any resident can see what is coming up, what was decided, and how each commissioner voted. Free, no account, every summary tied back to the official record.`,
+      technologies: ['FastAPI', 'Gemma 4', 'Legistar API', 'SQLite', 'Server-rendered SEO', 'Hetzner / Coolify'],
+      image: 'screenshots/civic-lens.png',
+      liveUrl: 'https://civic.grudged.io',
+      githubUrl: 'https://github.com/Grudged/civic-lens',
+      category: 'Full Stack',
+      links: [],
+      diagrams: []
+    },
+    {
       title: 'Reef Watch',
       description: 'Satellite imagery analysis platform for monitoring coral reef health worldwide. Interactive CesiumJS globe with AI-driven reef condition assessments from real satellite data.',
       technologies: ['FastAPI', 'CesiumJS', 'Satellite APIs', 'AI Analysis', 'GeoJSON'],
