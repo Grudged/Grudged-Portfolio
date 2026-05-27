@@ -99,7 +99,10 @@ export class ProjectsComponent {
       githubUrl: 'https://github.com/Grudged/civic-lens',
       category: 'Full Stack',
       links: [],
-      diagrams: []
+      diagrams: [
+        'Civic-Lens-Architecture.svg',
+        'Civic-Lens-README.md',
+      ]
     },
     {
       title: 'Reef Watch',

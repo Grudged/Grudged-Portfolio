@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 760" font-family="'Segoe UI', system-ui, -apple-system, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5b6472"/>
+    </marker>
+  </defs>
+  <rect width="1120" height="760" fill="#ffffff"/>
+
+  <!-- title -->
+  <text x="420" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#1f2430">Civic Lens — System Architecture</text>
+  <text x="420" y="68" text-anchor="middle" font-size="13" fill="#5b6472">Clark County public records → plain-English briefs · free, public, SEO-discoverable</text>
+
+  <!-- 1. source -->
+  <rect x="230" y="92" width="380" height="56" rx="8" fill="#ffffff" stroke="#27326b" stroke-width="1.5"/>
+  <text x="420" y="116" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2430">Clark County Legistar API</text>
+  <text x="420" y="135" text-anchor="middle" font-size="11" fill="#5b6472">webapi.legistar.com/v1/clark · public records, no key</text>
+  <path d="M420,148 V180" stroke="#5b6472" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+
+  <!-- 2. production (Arch) -->
+  <rect x="120" y="180" width="600" height="178" rx="10" fill="#f3f4f8" stroke="#27326b" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="140" y="203" font-size="12" font-weight="700" fill="#27326b">PRODUCTION · Arch Linux — nightly timers (where Gemma lives)</text>
+
+  <rect x="140" y="216" width="170" height="74" rx="8" fill="#ffffff" stroke="#c9cedb"/>
+  <text x="225" y="244" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2430">collect.py</text>
+  <text x="225" y="262" text-anchor="middle" font-size="10.5" fill="#5b6472">Legistar → civic.db</text>
+  <text x="225" y="277" text-anchor="middle" font-size="10.5" fill="#5b6472">items · roll-call votes</text>
+
+  <rect x="335" y="216" width="170" height="74" rx="8" fill="#ffffff" stroke="#c9cedb"/>
+  <text x="420" y="244" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2430">summarize_job.py</text>
+  <text x="420" y="262" text-anchor="middle" font-size="10.5" fill="#5b6472">plain summaries +</text>
+  <text x="420" y="277" text-anchor="middle" font-size="10.5" fill="#5b6472">topic tags</text>
+
+  <rect x="530" y="216" width="170" height="74" rx="8" fill="#ffffff" stroke="#c9cedb"/>
+  <text x="615" y="244" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2430">export.py</text>
+  <text x="615" y="262" text-anchor="middle" font-size="10.5" fill="#5b6472">civic.db →</text>
+  <text x="615" y="277" text-anchor="middle" font-size="10.5" fill="#5b6472">data/civic.json</text>
+
+  <path d="M310,253 H335" stroke="#5b6472" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+  <path d="M505,253 H530" stroke="#5b6472" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+
+  <!-- gemma offshoot -->
+  <rect x="335" y="306" width="170" height="40" rx="8" fill="#fbf3e2" stroke="#976e1c"/>
+  <text x="420" y="331" text-anchor="middle" font-size="11.5" font-weight="600" fill="#7c5a14">Gemma 4 · MLX (Mac :8321)</text>
+  <path d="M420,290 V306" stroke="#976e1c" stroke-width="1.5" fill="none" stroke-dasharray="4 3" marker-end="url(#arr)"/>
+
+  <path d="M420,358 V392" stroke="#5b6472" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+  <text x="432" y="380" font-size="11" fill="#5b6472">git push</text>
+
+  <!-- 3. transport -->
+  <rect x="230" y="392" width="380" height="56" rx="8" fill="#1f2430"/>
+  <text x="420" y="416" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">GitHub · Grudged/civic-lens</text>
+  <text x="420" y="435" text-anchor="middle" font-size="11" fill="#c9cedb">data/civic.json — versioned, public</text>
+  <path d="M420,448 V482" stroke="#5b6472" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+  <text x="432" y="470" font-size="11" fill="#5b6472">cron: git pull every 15 min</text>
+
+  <!-- 4. serving (Hetzner) -->
+  <rect x="150" y="482" width="540" height="104" rx="10" fill="#f3f4f8" stroke="#27326b" stroke-width="1.5"/>
+  <text x="170" y="505" font-size="12" font-weight="700" fill="#27326b">SERVING · Hetzner — Docker / Traefik (auto-TLS)</text>
+  <rect x="170" y="514" width="220" height="56" rx="8" fill="#ffffff" stroke="#c9cedb"/>
+  <text x="280" y="538" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1f2430">load_json.py</text>
+  <text x="280" y="556" text-anchor="middle" font-size="10.5" fill="#5b6472">civic.json → civic.db (atomic)</text>
+  <rect x="450" y="514" width="220" height="56" rx="8" fill="#ffffff" stroke="#c9cedb"/>
+  <text x="560" y="538" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1f2430">FastAPI + Traefik</text>
+  <text x="560" y="556" text-anchor="middle" font-size="10.5" fill="#5b6472">server-rendered SEO pages</text>
+  <path d="M390,542 H450" stroke="#5b6472" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+  <path d="M420,586 V618" stroke="#5b6472" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+
+  <!-- 5. public -->
+  <rect x="230" y="618" width="380" height="58" rx="8" fill="#eaf3ee" stroke="#2e6b4f" stroke-width="1.5"/>
+  <text x="420" y="643" text-anchor="middle" font-size="15" font-weight="700" fill="#1f5037">civic.grudged.io</text>
+  <text x="420" y="662" text-anchor="middle" font-size="11" fill="#2e6b4f">residents · summaries · votes · topics · maps · countdowns</text>
+
+  <!-- side rail: wired into -->
+  <text x="760" y="203" font-size="12" font-weight="700" fill="#5b6472">WIRED INTO THE ECOSYSTEM</text>
+  <path d="M690,300 C 720,300 730,300 750,300" stroke="#c9cedb" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
+
+  <rect x="760" y="216" width="320" height="50" rx="8" fill="#ffffff" stroke="#c9cedb"/>
+  <text x="776" y="238" font-size="12.5" font-weight="700" fill="#1f2430">Mission Control</text>
+  <text x="776" y="255" font-size="10.5" fill="#5b6472">Civic view · proxies /api/civic</text>
+
+  <rect x="760" y="276" width="320" height="50" rx="8" fill="#ffffff" stroke="#c9cedb"/>
+  <text x="776" y="298" font-size="12.5" font-weight="700" fill="#1f2430">Knowledge Compiler</text>
+  <text x="776" y="315" font-size="10.5" fill="#5b6472">summaries → nightly Gemma LoRA training</text>
+
+  <rect x="760" y="336" width="320" height="50" rx="8" fill="#ffffff" stroke="#c9cedb"/>
+  <text x="776" y="358" font-size="12.5" font-weight="700" fill="#1f2430">integration-health</text>
+  <text x="776" y="375" font-size="10.5" fill="#5b6472">uptime monitoring</text>
+
+  <rect x="760" y="396" width="320" height="50" rx="8" fill="#ffffff" stroke="#c9cedb"/>
+  <text x="776" y="418" font-size="12.5" font-weight="700" fill="#1f2430">Umami</text>
+  <text x="776" y="435" font-size="10.5" fill="#5b6472">privacy-friendly analytics</text>
+
+  <!-- footer note -->
+  <text x="420" y="712" text-anchor="middle" font-size="11" fill="#5b6472">Deterministic extraction for topics · glossary · locations — Gemma only writes the prose summaries.</text>
+  <text x="420" y="730" text-anchor="middle" font-size="11" fill="#5b6472">Every page is labeled "AI summary" and links to the official record.</text>
+</svg>
