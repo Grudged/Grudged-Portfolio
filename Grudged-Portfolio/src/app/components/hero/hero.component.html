@@ -1,24 +1,34 @@
 <section class="hero">
   <div class="hero-container">
     <div class="hero-content">
-      <h1 class="hero-title">Hi, I'm <span class="highlight">Chris Moore</span></h1>
-      <p class="hero-subtitle" role="text">Full Stack Developer & Founder</p>
+      <p class="hero-partno">PART&nbsp;NO. CM&ndash;2026 &middot; LAS&nbsp;VEGAS, NV</p>
+      <h1 class="hero-title">Chris Moore</h1>
+      <p class="hero-subtitle">Full&ndash;Stack Developer &amp; Founder &mdash; Grudged LLC</p>
       <p class="hero-description">
         I build systems that run themselves. From AI pipelines and betting engines to
         real-time dashboards and automated data collection across 39+ sources &mdash; I turn
         ideas into infrastructure that works around the clock.
       </p>
       <div class="hero-buttons">
-        <a routerLink="/projects" class="btn btn-primary">View My Work</a>
-        <a routerLink="/contact" class="btn btn-secondary">Get In Touch</a>
+        <a routerLink="/projects" class="btn btn-primary">View the work &rarr;</a>
+        <a routerLink="/contact" class="btn btn-secondary">Get in touch</a>
       </div>
     </div>
-    <div class="hero-image">
-      <div class="placeholder-image">
-        <!-- Add your profile image here -->
-        <img src="my-head-shot.jpg" alt="Chris Moore - Full Stack Developer Profile Photo" loading="lazy" width="300" height="300">
-        <div class="placeholder" *ngIf="false">Your Photo</div>
+
+    <aside class="hero-spec" aria-label="Specifications">
+      <div class="spec-head">
+        <span>SPEC SHEET</span><span class="ok">&#9679; OPEN TO WORK</span>
       </div>
-    </div>
+      <div class="spec-photo">
+        <img src="my-head-shot.jpg" alt="Chris Moore" loading="lazy" width="300" height="300">
+      </div>
+      <dl class="spec-table">
+        <div class="spec-row"><dt>Role</dt><dd>Full-stack / automation</dd></div>
+        <div class="spec-row"><dt>Entity</dt><dd>Grudged LLC</dd></div>
+        <div class="spec-row"><dt>Stack</dt><dd>TS &middot; Python &middot; Angular &middot; Postgres</dd></div>
+        <div class="spec-row"><dt>Infra</dt><dd>Self-hosted homelab</dd></div>
+        <div class="spec-row"><dt>Based</dt><dd>Las Vegas, NV</dd></div>
+      </dl>
+    </aside>
   </div>
 </section>

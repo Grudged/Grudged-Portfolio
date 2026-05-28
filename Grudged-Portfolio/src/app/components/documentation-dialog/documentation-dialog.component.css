@@ -314,7 +314,7 @@
   height: 100%;
   font-size: 0.75rem;
   color: #4b5563;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #1f2937;
   border-radius: 4px;
   font-weight: 600;
   color: white;
@@ -368,7 +368,7 @@
 }
 
 .content-type.document {
-  color: #7c3aed;
+  color: var(--primary-color);
 }
 
 .content-type.diagram {
