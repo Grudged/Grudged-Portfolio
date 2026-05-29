@@ -149,7 +149,7 @@ export class ProjectsComponent {
     },
     {
       title: 'A.M. Oakley',
-      description: 'Author platform for my fiction writing under the pen name A.M. Oakley. Showcases published work, connects with readers, and ties into the EditForge manuscript workflow.',
+      description: 'Author website I designed and built for fiction author A.M. Oakley — showcases published work, connects with readers, and ties into the EditForge manuscript workflow.',
       technologies: ['Angular', 'TypeScript', 'Netlify'],
       image: 'screenshots/amoakley.png',
       liveUrl: 'https://amoakley.com',
