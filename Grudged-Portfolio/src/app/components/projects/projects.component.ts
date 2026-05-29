@@ -44,18 +44,6 @@ export class ProjectsComponent {
       confidentialType: 'personal'
     },
     {
-      title: 'Chase Engine',
-      description: 'Automated sports betting bot running chase strategies across NHL, MLB, NBA, WNBA, EPL, and MLS. Manages bankroll, tracks sequences, and places bets based on backtested models using William Hill odds.',
-      technologies: ['Python', 'FastAPI', 'SQLite', 'APScheduler', 'ESPN API', 'systemd'],
-      image: 'chase-engine.svg',
-      liveUrl: '',
-      githubUrl: '#',
-      category: 'Automation',
-      links: [],
-      diagrams: [],
-      confidentialType: 'personal'
-    },
-    {
       title: 'CharacterQuill',
       description: 'AI-powered companion for fiction authors. Build characters, chat with them via group AI for in-voice feedback, visualize plot with story maps, generate portraits, and use randomizers for scene and name ideas.',
       technologies: ['Angular', 'FastAPI', 'PostgreSQL', 'AI Chat', 'WebSockets'],
