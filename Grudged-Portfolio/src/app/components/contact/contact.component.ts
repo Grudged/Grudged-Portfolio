@@ -16,7 +16,8 @@ export class ContactComponent {
     name: '',
     email: '',
     subject: '',
-    message: ''
+    message: '',
+    botField: '' // honeypot — humans never fill this
   };
 
   isSubmitting = false;
@@ -49,6 +50,12 @@ export class ContactComponent {
       );
 
       console.log('Email sent successfully:', response);
+
+      // Mirror the inquiry into Salesforce (same Lead Org as grudged.io +
+      // the AppExchange listing). Fire-and-forget: a SF failure must not flip
+      // the user's "message sent" success — EmailJS already delivered it.
+      this.createSalesforceLead();
+
       this.submitSuccess = true;
       this.submitMessage = 'Thank you! Your message has been sent successfully. I\'ll get back to you soon.';
       this.resetForm();
@@ -66,6 +73,22 @@ export class ContactComponent {
     }
   }
 
+  // Create a Salesforce Lead via the Netlify function (server-side Web-to-Lead).
+  // Never throws into the caller — logs and moves on.
+  private createSalesforceLead() {
+    fetch('/.netlify/functions/lead', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: this.contactForm.name,
+        email: this.contactForm.email,
+        subject: this.contactForm.subject,
+        message: this.contactForm.message,
+        botField: this.contactForm.botField
+      })
+    }).catch((err) => console.error('Salesforce lead post failed:', err));
+  }
+
   // Alternative method: Open default email client
   openEmailClient() {
     const subject = encodeURIComponent('Portfolio Contact');
@@ -78,7 +101,8 @@ export class ContactComponent {
       name: '',
       email: '',
       subject: '',
-      message: ''
+      message: '',
+      botField: ''
     };
   }
 }
