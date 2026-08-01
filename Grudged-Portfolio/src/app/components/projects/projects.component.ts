@@ -28,6 +28,9 @@ export class ProjectsComponent {
       // Repo exists (Grudged/phoenix-telemetry) but is private until the team
       // signs off on publishing their platform — a link would 404 for visitors.
       githubUrl: '#',
+      // Hidden from the page for now; the partnership is still described on
+      // grudged.io. Flip to false to show it.
+      hidden: true,
       category: 'Full Stack',
       links: [],
       diagrams: [],
@@ -209,10 +212,13 @@ export class ProjectsComponent {
   ];
 
   get filteredProjects() {
+    // `hidden: true` keeps an entry in the file but off the page — for work that
+    // is live but not ready to be shown publicly yet.
+    const visible = this.projects.filter(project => !(project as any).hidden);
     if (this.selectedCategory === 'All') {
-      return this.projects;
+      return visible;
     }
-    return this.projects.filter(project => project.category === this.selectedCategory);
+    return visible.filter(project => project.category === this.selectedCategory);
   }
 
   selectCategory(category: string) {
