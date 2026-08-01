@@ -25,10 +25,13 @@ export class ProjectsComponent {
       technologies: ['FastAPI', 'SQLite', 'iRacing API', 'Discord OAuth', 'Gemma 4', 'Docker', 'Hetzner / Traefik'],
       image: 'screenshots/phoenix-evolution.png',
       liveUrl: 'https://phoenixevo.org',
-      githubUrl: 'https://github.com/Grudged/phoenix-telemetry',
+      // Repo exists (Grudged/phoenix-telemetry) but is private until the team
+      // signs off on publishing their platform — a link would 404 for visitors.
+      githubUrl: '#',
       category: 'Full Stack',
       links: [],
-      diagrams: []
+      diagrams: [],
+      confidentialType: 'personal'
     },
     {
       title: 'Mission Control',
