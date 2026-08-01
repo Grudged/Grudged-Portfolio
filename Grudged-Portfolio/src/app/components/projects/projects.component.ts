@@ -20,6 +20,18 @@ export class ProjectsComponent {
 
   projects = [
     {
+      title: 'Phoenix Evolution',
+      description: `The team site and data platform for Phoenix Evolution, an iRacing team racing GT3 sprint and multi-class endurance across squads in the US, UK and Australia — built as their technology partner. Every number on it is derived from race results rather than entered by hand: a nightly collector pulls the roster, results, laps and rating history from iRacing into a warehouse, and a denormalized snapshot ships to the site every 30 minutes. Public pages cover the roster, driver profiles and per-race summaries; a Discord-authenticated tier adds the results archive, record book, a season participation-credit tracker that replaced a hand-kept spreadsheet, and weekly rating movement. Race-day updates from the team's Discord are rewritten by a local Gemma 4 model into a public pit-wall feed.`,
+      technologies: ['FastAPI', 'SQLite', 'iRacing API', 'Discord OAuth', 'Gemma 4', 'Docker', 'Hetzner / Traefik'],
+      image: 'screenshots/phoenix-evolution.png',
+      liveUrl: 'https://phoenixevo.org',
+      githubUrl: '#',
+      category: 'Full Stack',
+      links: [],
+      diagrams: [],
+      confidentialType: 'personal'
+    },
+    {
       title: 'Mission Control',
       description: 'PWA ops console with 23 views for monitoring and managing all services, data pipelines, betting operations, LLC finances, crypto portfolio, and infrastructure health. The central nervous system for everything I build.',
       technologies: ['Angular', 'FastAPI', 'PostgreSQL', 'WebSockets', 'PWA', 'Gemma 4 AI Agent'],
