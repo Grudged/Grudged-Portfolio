@@ -28,9 +28,6 @@ export class ProjectsComponent {
       // Repo exists (Grudged/phoenix-telemetry) but is private until the team
       // signs off on publishing their platform — a link would 404 for visitors.
       githubUrl: '#',
-      // Hidden from the page for now; the partnership is still described on
-      // grudged.io. Flip to false to show it.
-      hidden: true,
       category: 'Full Stack',
       links: [],
       diagrams: [],
