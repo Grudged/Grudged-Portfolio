@@ -49,6 +49,17 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+# Screenshots are the exception to the rule above, and must come after it.
+# Angular fingerprints its own build output, so `immutable` for a year is right
+# for js/css and for anything whose name changes when its bytes do. A project
+# screenshot keeps the same filename forever and gets replaced when the project
+# moves on — under `immutable` a returning visitor would keep the old picture
+# for a year, which is exactly the person the portfolio is trying to update.
+[[headers]]
+  for = "/screenshots/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
 [[headers]]
   for = "/*.jpg"
   [headers.values]
